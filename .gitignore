@@ -1,0 +1,19 @@
+# Ignore system and user-specific files and directories
+.bash_history
+.cache/
+.fiftyone/
+.gitconfig
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+.local/
+.npm/
+.ssh/
+.wget-hsts
+
+# Ignore specific files
+Test-this-notebook.ipynb
+
+# Ignore datasets directory
+datasets/
+
