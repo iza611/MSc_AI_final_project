@@ -1,1 +1,1 @@
-Detect hand gesture of the target person among group of people showing various hand gestures.
+Detect the hand gesture of the target person among a group of people showing various hand gestures.
