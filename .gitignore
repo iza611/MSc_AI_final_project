@@ -10,6 +10,7 @@
 .npm/
 .ssh/
 .wget-hsts
+.lesshst
 
 # Ignore specific files
 Test-this-notebook.ipynb
@@ -17,3 +18,5 @@ Test-this-notebook.ipynb
 # Ignore datasets directory
 datasets/
 
+# Ignore directory with trained weights
+training/runs/train/MIAP_person_detection2/weights/

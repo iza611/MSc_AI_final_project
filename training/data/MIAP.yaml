@@ -1,0 +1,9 @@
+train: ../../datasets/MIAP/images/train/ 
+val:  ../../datasets/MIAP/images/val/
+test: ../../datasets/MIAP/images/test/
+
+# number of classes
+nc: 1
+
+# class names
+names: ["person"]
