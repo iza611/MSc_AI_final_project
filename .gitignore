@@ -14,6 +14,7 @@
 
 # Ignore specific files
 Test-this-notebook.ipynb
+git-lfs_3.5.1_amd64.deb
 
 # Ignore datasets directory
 datasets/
