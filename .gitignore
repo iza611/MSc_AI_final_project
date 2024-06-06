@@ -11,6 +11,8 @@
 .ssh/
 .wget-hsts
 .lesshst
+.config/
+.netrc
 
 # Ignore specific files
 Test-this-notebook.ipynb
@@ -20,4 +22,4 @@ git-lfs_3.5.1_amd64.deb
 datasets/
 
 # Ignore directory with trained weights
-training/runs/train/MIAP_person_detection2/weights/
+training/runs/
