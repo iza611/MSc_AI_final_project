@@ -17,6 +17,7 @@
 # Ignore specific files
 Test-this-notebook.ipynb
 git-lfs_3.5.1_amd64.deb
+training/wandb/run-20240606_104056-c2vy8kn4/run-c2vy8kn4.wandb
 
 # Ignore datasets directory
 datasets/
