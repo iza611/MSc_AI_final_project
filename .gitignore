@@ -13,16 +13,11 @@
 .lesshst
 .config/
 .netrc
+.bashrc
 
 # Ignore specific files
-Test-this-notebook.ipynb
 git-lfs_3.5.1_amd64.deb
-training/wandb/run-20240606_104056-c2vy8kn4/run-c2vy8kn4.wandb
-.bashrc
 install_git_lfs.sh
 
 # Ignore datasets directory
 datasets/
-
-# Ignore directory with trained weights
-training/runs/
