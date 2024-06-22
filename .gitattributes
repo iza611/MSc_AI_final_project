@@ -1,2 +1,4 @@
 training/wandb/run-20240606_104056-c2vy8kn4/run-c2vy8kn4.wandb filter=lfs diff=lfs merge=lfs -text
 training/runs/* filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240621_231705-hngynv2i/run-hngynv2i.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240621_210526-qsexwudn/run-qsexwudn.wandb filter=lfs diff=lfs merge=lfs -text

@@ -81,7 +81,16 @@ def train(hyp, opt, device, tb_writer=None):
 
     # Model
     pretrained = weights.endswith('.pt')
+    #debugging
+    # print(f"weights= {weights}")
+    # print(f"pretrained= {pretrained}")
     if pretrained:
+        # fileeee = Path(str(weights).strip().replace("'", ''))             had to remove .lower() here and in google_utils.py
+        # print(f"Resolved path to weights: {fileeee.resolve()}")
+        # if not fileeee.exists():
+        #     print("provided weights file DOES NOT exist")
+        # else:
+        #     print("provided weights file DOES exist")
         with torch_distributed_zero_first(rank):
             attempt_download(weights)  # download if not found locally
         ckpt = torch.load(weights, map_location=device)  # load checkpoint
@@ -572,6 +581,7 @@ if __name__ == '__main__':
     
     # debugging
     print(f"Device argument received: {opt.device}")
+    print(f"Weights path received: {opt.weights}")
 
     # Set DDP variables
     opt.world_size = int(os.environ['WORLD_SIZE']) if 'WORLD_SIZE' in os.environ else 1
