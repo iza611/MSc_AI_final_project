@@ -300,6 +300,11 @@ def train(hyp, opt, device, tb_writer=None):
     model.gr = 1.0  # iou loss ratio (obj_loss = 1.0 or iou)
     model.class_weights = labels_to_class_weights(dataset.labels, nc).to(device) * nc  # attach class weights
     model.names = names
+    
+    # Early stopping parameters
+    early_stopping_patience = 5  
+    best_val_obj_loss = np.inf
+    patience_counter = 0
 
     # Start training
     t0 = time.time()
@@ -414,7 +419,6 @@ def train(hyp, opt, device, tb_writer=None):
                                                   save_dir.glob('train*.jpg') if x.exists()]})
 
             # end batch ------------------------------------------------------------------------------------------------
-        # end epoch ----------------------------------------------------------------------------------------------------
 
         # Scheduler
         lr = [x['lr'] for x in optimizer.param_groups]  # for tensorboard
@@ -492,6 +496,20 @@ def train(hyp, opt, device, tb_writer=None):
                         wandb_logger.log_model(
                             last.parent, opt, epoch, fi, best_model=best_fitness == fi)
                 del ckpt
+                
+            # Early Stopping Check
+            val_obj_loss = results[5]  
+            print(f"val_obj_loss={val_obj_loss}")   # TODO: delete this print statement
+            if val_obj_loss < best_val_obj_loss:
+                best_val_obj_loss = val_obj_loss
+                patience_counter = 0
+            else:
+                patience_counter += 1
+            print(f"patience_counter={patience_counter}")
+
+            if patience_counter >= early_stopping_patience:
+                print(f"Early stopping at epoch {epoch + 1} due to no improvement in validation object loss.")
+                break
 
         # end epoch ----------------------------------------------------------------------------------------------------
     # end training
@@ -577,6 +595,7 @@ if __name__ == '__main__':
     parser.add_argument('--artifact_alias', type=str, default="latest", help='version of dataset artifact to be used')
     parser.add_argument('--freeze', nargs='+', type=int, default=[0], help='Freeze layers: backbone of yolov7=50, first3=0 1 2')
     parser.add_argument('--v5-metric', action='store_true', help='assume maximum recall as 1.0 in AP calculation')
+    parser.add_argument('--early-stop', , action='store_true', help='enable Early Stopping for training')
     opt = parser.parse_args()
     
     # debugging
