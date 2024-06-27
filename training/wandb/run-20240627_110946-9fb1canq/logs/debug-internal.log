@@ -1,0 +1,403 @@
+2024-06-27 11:09:46,605 INFO    StreamThr :12613 [internal.py:wandb_internal():85] W&B internal server running at pid: 12613, started at: 2024-06-27 11:09:46.604703
+2024-06-27 11:09:46,606 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status
+2024-06-27 11:09:46,607 INFO    WriterThread:12613 [datastore.py:open_for_write():87] open: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/run-9fb1canq.wandb
+2024-06-27 11:09:46,607 DEBUG   SenderThread:12613 [sender.py:send():378] send: header
+2024-06-27 11:09:46,611 DEBUG   SenderThread:12613 [sender.py:send():378] send: run
+2024-06-27 11:09:46,619 INFO    SenderThread:12613 [sender.py:_setup_resume():748] checking resume status for None/experiments/9fb1canq
+2024-06-27 11:09:47,142 INFO    SenderThread:12613 [dir_watcher.py:__init__():211] watching files in: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files
+2024-06-27 11:09:47,142 INFO    SenderThread:12613 [sender.py:_start_run_threads():1123] run started: 9fb1canq with start time 1719486586.604042
+2024-06-27 11:09:47,150 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: check_version
+2024-06-27 11:09:47,150 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: check_version
+2024-06-27 11:09:47,233 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: run_start
+2024-06-27 11:09:47,234 DEBUG   HandlerThread:12613 [system_info.py:__init__():26] System info init
+2024-06-27 11:09:47,234 DEBUG   HandlerThread:12613 [system_info.py:__init__():41] System info init done
+2024-06-27 11:09:47,234 INFO    HandlerThread:12613 [system_monitor.py:start():194] Starting system monitor
+2024-06-27 11:09:47,234 INFO    SystemMonitor:12613 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-27 11:09:47,234 INFO    HandlerThread:12613 [system_monitor.py:probe():214] Collecting system info
+2024-06-27 11:09:47,234 INFO    SystemMonitor:12613 [interfaces.py:start():188] Started cpu monitoring
+2024-06-27 11:09:47,235 INFO    SystemMonitor:12613 [interfaces.py:start():188] Started disk monitoring
+2024-06-27 11:09:47,235 INFO    SystemMonitor:12613 [interfaces.py:start():188] Started gpu monitoring
+2024-06-27 11:09:47,236 INFO    SystemMonitor:12613 [interfaces.py:start():188] Started memory monitoring
+2024-06-27 11:09:47,236 INFO    SystemMonitor:12613 [interfaces.py:start():188] Started network monitoring
+2024-06-27 11:09:47,251 DEBUG   HandlerThread:12613 [system_info.py:probe():150] Probing system
+2024-06-27 11:09:47,252 DEBUG   HandlerThread:12613 [system_info.py:_probe_git():135] Probing git
+2024-06-27 11:09:47,321 DEBUG   HandlerThread:12613 [system_info.py:_probe_git():143] Probing git done
+2024-06-27 11:09:47,321 DEBUG   HandlerThread:12613 [system_info.py:probe():198] Probing system done
+2024-06-27 11:09:47,321 DEBUG   HandlerThread:12613 [system_monitor.py:probe():223] {'os': 'Linux-6.6.9-200.fc39.x86_64-x86_64-with-glibc2.35', 'python': '3.10.13', 'heartbeatAt': '2024-06-27T11:09:47.251696', 'startedAt': '2024-06-27T11:09:46.601356', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/jovyan/training/model/yolov7/train.py', 'codePathLocal': 'model/yolov7/train.py', 'codePath': 'training/model/yolov7/train.py', 'git': {'remote': 'https://github.com/iza611/MSc_AI_final_project', 'commit': '5f049da3947e296650c20731292263d61eafa12f'}, 'email': 'ozogizabella@gmail.com', 'root': '/home/jovyan', 'host': 'jupyter-ec22400', 'username': 'jovyan', 'executable': '/home/jovyan/yolo/bin/python', 'cpu_count': 48, 'cpu_count_logical': 96, 'cpu_freq': {'current': 3256.124333333333, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3600.043, 'min': 0.0, 'max': 0.0}, {'current': 3600.141, 'min': 0.0, 'max': 0.0}, {'current': 3603.809, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3600.84, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3601.157, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3598.793, 'min': 0.0, 'max': 0.0}, {'current': 3599.842, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.353, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3598.833, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3597.12, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3594.56, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.978, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3596.567, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3601.499, 'min': 0.0, 'max': 0.0}, {'current': 3599.837, 'min': 0.0, 'max': 0.0}, {'current': 3603.651, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.979, 'min': 0.0, 'max': 0.0}, {'current': 3594.589, 'min': 0.0, 'max': 0.0}, {'current': 3599.993, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.938, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.851, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.999, 'min': 0.0, 'max': 0.0}, {'current': 3604.546, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3598.937, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3598.987, 'min': 0.0, 'max': 0.0}, {'current': 3600.04, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.843, 'min': 0.0, 'max': 0.0}, {'current': 3600.006, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3593.273, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3602.595, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3598.942, 'min': 0.0, 'max': 0.0}, {'current': 3597.821, 'min': 0.0, 'max': 0.0}, {'current': 3599.999, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3602.801, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3600.018, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.986, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3600.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.982, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}, {'current': 3600.058, 'min': 0.0, 'max': 0.0}, {'current': 3000.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1786.9365043640137, 'used': 197.49172973632812}}, 'gpu': 'NVIDIA A100 80GB PCIe', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}], 'memory': {'total': 1510.3569717407227}}
+2024-06-27 11:09:47,323 INFO    HandlerThread:12613 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-27 11:09:47,323 INFO    HandlerThread:12613 [system_monitor.py:probe():227] Publishing system info
+2024-06-27 11:09:47,323 INFO    HandlerThread:12613 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-27 11:09:47,324 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:09:47,324 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-27 11:09:47,394 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-27 11:09:47,394 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: python_packages
+2024-06-27 11:09:47,395 DEBUG   SenderThread:12613 [sender.py:send():378] send: telemetry
+2024-06-27 11:09:47,396 DEBUG   SenderThread:12613 [sender.py:send():378] send: telemetry
+2024-06-27 11:09:47,396 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:09:47,397 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:09:47,667 DEBUG   SenderThread:12613 [sender.py:send():378] send: config
+2024-06-27 11:09:47,667 DEBUG   SenderThread:12613 [sender.py:send():378] send: config
+2024-06-27 11:09:48,017 INFO    wandb-upload_0:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/h19b82ft-wandb-metadata.json
+2024-06-27 11:09:48,267 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/wandb-metadata.json
+2024-06-27 11:09:48,333 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:09:48,371 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/requirements.txt
+2024-06-27 11:09:50,167 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:09:51,729 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:09:54,168 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:09:55,169 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:09:56,169 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:09:57,177 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:02,178 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:02,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:10:02,429 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:10:07,644 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:12,644 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:17,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:10:17,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:10:17,666 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:18,175 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/config.yaml
+2024-06-27 11:10:22,840 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:27,840 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:32,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:10:32,429 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:10:33,564 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:38,566 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:43,567 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:47,236 DEBUG   SystemMonitor:12613 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-27 11:10:47,239 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:10:47,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:10:47,429 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:10:48,595 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:53,595 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:10:58,596 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:02,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:11:02,429 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:11:04,574 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:09,575 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:14,575 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:17,240 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:11:17,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:11:17,429 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:11:20,576 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:25,576 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:30,577 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:32,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:11:32,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:11:35,648 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:40,648 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:45,667 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:47,250 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:11:47,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:11:47,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:11:51,556 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:11:56,567 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:01,568 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:02,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:12:02,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:12:06,601 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:11,602 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:14,244 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:12:17,242 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:12:17,246 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:17,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:12:17,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:12:18,245 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:12:20,246 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:12:22,379 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:24,247 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:12:27,383 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:32,384 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:32,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:12:32,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:12:37,609 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:42,629 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:47,243 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:12:47,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:12:47,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:12:48,615 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:53,616 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:12:58,617 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:02,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:13:02,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:13:04,571 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:09,571 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:15,250 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:16,268 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:13:17,244 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:13:17,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:13:17,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:13:21,045 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:21,269 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:13:23,270 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:13:26,247 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:27,271 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:13:31,247 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:32,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:13:32,430 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:13:36,573 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:41,573 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:46,574 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:47,245 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:13:47,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:13:47,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:13:52,552 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:13:57,552 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:02,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:14:02,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:14:02,622 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:07,629 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:12,630 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:17,246 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:14:17,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:14:17,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:14:18,616 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:21,285 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:14:23,782 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:25,286 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:14:28,783 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:31,288 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:14:32,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:14:32,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:14:33,288 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:14:34,656 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:39,657 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:44,658 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:47,247 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:14:47,431 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:14:47,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:14:50,573 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:14:55,573 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:00,574 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:02,431 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:15:02,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:15:05,633 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:10,633 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:15,634 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:17,248 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:15:17,431 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:15:17,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:15:19,301 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:21,583 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:27,446 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:29,303 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:32,431 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:15:32,431 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:15:32,653 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:35,305 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:38,430 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:41,329 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:43,585 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:45,429 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,429 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_37e7be2a24ea7b7f166f.jpg with policy now
+2024-06-27 11:15:45,432 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,432 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_8ed23d3fb647b691f930.jpg with policy now
+2024-06-27 11:15:45,436 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,436 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_d6ba7dbe356bfa0dc2d7.jpg with policy now
+2024-06-27 11:15:45,438 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,438 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_5d5701a22209a5e89930.jpg with policy now
+2024-06-27 11:15:45,441 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,441 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_d6e8422e8c3882b503ae.jpg with policy now
+2024-06-27 11:15:45,455 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,455 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_f66c8b0735bd492b0c3e.jpg with policy now
+2024-06-27 11:15:45,468 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,468 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_688f8d761c95d0a4a0f2.jpg with policy now
+2024-06-27 11:15:45,471 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,471 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_87553589306044708361.jpg with policy now
+2024-06-27 11:15:45,474 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,474 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_44f595b47ea34f686aef.jpg with policy now
+2024-06-27 11:15:45,476 DEBUG   SenderThread:12613 [sender.py:send():378] send: files
+2024-06-27 11:15:45,476 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file media/images/Mosaics_0_054f012a488af5bb4488.jpg with policy now
+2024-06-27 11:15:45,771 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-27 11:15:45,772 DEBUG   SenderThread:12613 [sender.py:send():378] send: history
+2024-06-27 11:15:45,773 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: summary_record
+2024-06-27 11:15:45,773 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-27 11:15:46,330 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_688f8d761c95d0a4a0f2.jpg
+2024-06-27 11:15:46,330 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_d6e8422e8c3882b503ae.jpg
+2024-06-27 11:15:46,331 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_f66c8b0735bd492b0c3e.jpg
+2024-06-27 11:15:46,331 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_5d5701a22209a5e89930.jpg
+2024-06-27 11:15:46,331 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_44f595b47ea34f686aef.jpg
+2024-06-27 11:15:46,331 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_87553589306044708361.jpg
+2024-06-27 11:15:46,331 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_37e7be2a24ea7b7f166f.jpg
+2024-06-27 11:15:46,331 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_8ed23d3fb647b691f930.jpg
+2024-06-27 11:15:46,332 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_d6ba7dbe356bfa0dc2d7.jpg
+2024-06-27 11:15:46,332 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/wandb-summary.json
+2024-06-27 11:15:46,332 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images/Mosaics_0_054f012a488af5bb4488.jpg
+2024-06-27 11:15:46,332 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media/images
+2024-06-27 11:15:46,332 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/media
+2024-06-27 11:15:46,421 INFO    wandb-upload_4:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/e73qpfn3-media/images/Mosaics_0_d6e8422e8c3882b503ae.jpg
+2024-06-27 11:15:46,507 INFO    wandb-upload_7:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/3xg77c5h-media/images/Mosaics_0_87553589306044708361.jpg
+2024-06-27 11:15:46,521 INFO    wandb-upload_1:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/d9wkiffm-media/images/Mosaics_0_8ed23d3fb647b691f930.jpg
+2024-06-27 11:15:46,529 INFO    wandb-upload_8:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/jved33e6-media/images/Mosaics_0_44f595b47ea34f686aef.jpg
+2024-06-27 11:15:46,534 INFO    wandb-upload_0:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/im2qscle-media/images/Mosaics_0_37e7be2a24ea7b7f166f.jpg
+2024-06-27 11:15:46,557 INFO    wandb-upload_3:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/qx7sz8x7-media/images/Mosaics_0_5d5701a22209a5e89930.jpg
+2024-06-27 11:15:46,629 INFO    wandb-upload_2:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/k6bowj5b-media/images/Mosaics_0_d6ba7dbe356bfa0dc2d7.jpg
+2024-06-27 11:15:46,629 INFO    wandb-upload_5:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/4m4b0bvf-media/images/Mosaics_0_f66c8b0735bd492b0c3e.jpg
+2024-06-27 11:15:46,640 INFO    wandb-upload_9:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/ewa5kb5l-media/images/Mosaics_0_054f012a488af5bb4488.jpg
+2024-06-27 11:15:46,709 INFO    wandb-upload_6:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/epaxpc21-media/images/Mosaics_0_688f8d761c95d0a4a0f2.jpg
+2024-06-27 11:15:47,249 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:15:47,298 INFO    wandb-upload_1:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/q25xpr91-media/images/Mosaics_0_d6e8422e8c3882b503ae.jpg
+2024-06-27 11:15:47,330 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:47,353 INFO    wandb-upload_8:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/incpp6qd-media/images/Mosaics_0_87553589306044708361.jpg
+2024-06-27 11:15:47,367 INFO    wandb-upload_7:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/lgzbem0j-media/images/Mosaics_0_44f595b47ea34f686aef.jpg
+2024-06-27 11:15:47,382 INFO    wandb-upload_3:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/hjmx7lvk-media/images/Mosaics_0_8ed23d3fb647b691f930.jpg
+2024-06-27 11:15:47,430 INFO    wandb-upload_4:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/osztzrhw-media/images/Mosaics_0_37e7be2a24ea7b7f166f.jpg
+2024-06-27 11:15:47,431 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:15:47,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:15:47,440 INFO    wandb-upload_2:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/i22qkynu-media/images/Mosaics_0_d6ba7dbe356bfa0dc2d7.jpg
+2024-06-27 11:15:47,493 INFO    wandb-upload_0:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/vh8ddyu3-media/images/Mosaics_0_054f012a488af5bb4488.jpg
+2024-06-27 11:15:48,124 INFO    wandb-upload_5:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/clfwqb7x-media/images/Mosaics_0_688f8d761c95d0a4a0f2.jpg
+2024-06-27 11:15:48,134 INFO    wandb-upload_6:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/g6hf2ehp-media/images/Mosaics_0_5d5701a22209a5e89930.jpg
+2024-06-27 11:15:48,134 INFO    wandb-upload_9:12613 [upload_job.py:push():130] Uploaded file /tmp/tmp6yfyxtfzwandb/e9695q8s-media/images/Mosaics_0_f66c8b0735bd492b0c3e.jpg
+2024-06-27 11:15:48,331 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:48,837 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:49,331 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:50,332 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:51,332 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:15:53,968 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:15:58,969 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:02,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:16:02,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:16:04,635 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:09,636 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:14,636 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:17,250 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:16:17,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:16:17,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:16:20,624 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:25,625 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:30,625 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:32,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:16:32,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:16:36,567 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:41,567 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:46,568 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:47,251 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:16:47,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:16:47,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:16:51,648 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:16:53,355 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:16:55,356 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:16:56,649 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:01,650 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:02,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:17:02,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:17:05,360 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:17:07,345 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:12,345 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:17,252 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:17:17,429 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:17,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:17:17,436 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:17:22,654 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:27,654 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:32,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:17:32,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:17:33,648 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:38,649 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:43,649 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:47,253 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:17:47,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:17:47,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:17:49,629 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:54,630 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:17:59,631 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:02,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:18:02,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:18:05,623 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:09,389 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:18:11,044 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:16,145 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:17,254 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:18:17,392 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:18:17,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:18:17,432 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:18:21,604 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:26,604 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:31,605 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:32,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:18:32,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:18:37,585 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:42,586 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:47,255 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:18:47,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:18:47,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:18:47,595 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:52,596 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:18:57,597 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:02,432 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:19:02,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:19:02,606 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:07,606 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:12,628 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:17,270 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:19:17,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:19:17,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:19:18,397 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:19,444 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:19:21,445 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:19:24,287 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:29,288 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:32,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:19:32,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:19:34,664 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:39,665 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:44,665 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:47,257 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:19:47,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:19:47,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:19:50,607 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:19:55,608 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:00,608 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:02,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:20:02,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:20:05,626 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:10,627 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:15,627 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:17,259 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:20:17,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:20:17,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:20:20,660 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:25,481 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:20:25,743 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:26,867 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-27 11:20:26,867 DEBUG   SenderThread:12613 [sender.py:send():378] send: history
+2024-06-27 11:20:26,867 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: summary_record
+2024-06-27 11:20:26,868 INFO    SenderThread:12613 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-27 11:20:27,482 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/wandb-summary.json
+2024-06-27 11:20:27,482 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:20:28,482 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:20:29,483 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:20:30,483 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:20:31,145 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:31,484 INFO    Thread-38 :12613 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jovyan/training/wandb/run-20240627_110946-9fb1canq/files/output.log
+2024-06-27 11:20:32,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:20:32,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:20:36,667 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:41,668 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:46,668 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:47,268 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:20:47,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:20:47,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:20:52,649 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:20:57,650 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:02,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:21:02,433 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:21:03,570 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:08,570 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:13,571 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:17,269 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:21:17,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:21:17,434 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:21:18,589 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:23,589 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:28,590 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:32,433 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:21:32,434 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:21:33,592 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:38,593 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:43,593 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:47,270 DEBUG   SenderThread:12613 [sender.py:send():378] send: stats
+2024-06-27 11:21:47,434 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-27 11:21:47,434 DEBUG   SenderThread:12613 [sender.py:send_request():405] send_request: stop_status
+2024-06-27 11:21:49,568 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report
+2024-06-27 11:21:54,568 DEBUG   HandlerThread:12613 [handler.py:handle_request():158] handle_request: status_report

@@ -1,7 +1,10 @@
 training/wandb/run-20240606_104056-c2vy8kn4/run-c2vy8kn4.wandb filter=lfs diff=lfs merge=lfs -text
 training/runs/* filter=lfs diff=lfs merge=lfs -text
 training/wandb/run-20240621_231705-hngynv2i/run-hngynv2i.wandb filter=lfs diff=lfs merge=lfs -text
-training/wandb/run-20240621_210526-qsexwudn/run-qsexwudn.wandb filter=lfs diff=lfs merge=lfs -text
 training/wandb/run-20240626_111843-78b07wlo/run-78b07wlo.wandb filter=lfs diff=lfs merge=lfs -text
 training/wandb/run-20240626_141536-4uuiyfat/run-4uuiyfat.wandb filter=lfs diff=lfs merge=lfs -text
 training/wandb/run-20240626_180250-962bgfy5/run-962bgfy5.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240626_220555-idsp78b8/run-idsp78b8.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240627_080524-kfcit3rc/run-kfcit3rc.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240627_091600-jtfgm7fi/run-jtfgm7fi.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240627_110946-9fb1canq/run-9fb1canq.wandb filter=lfs diff=lfs merge=lfs -text
