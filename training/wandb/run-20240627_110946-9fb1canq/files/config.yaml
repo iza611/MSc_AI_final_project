@@ -159,6 +159,12 @@ total_batch_size:
 _wandb:
   desc: null
   value:
+    bounding_box/class_labels:
+      Bounding Box Debugger/Images_wandb_delimeter_predictions:
+        type: bounding_box/class_labels
+        key: Bounding Box Debugger/Images_wandb_delimeter_predictions
+        value:
+          '0': target
     python_version: 3.10.13
     cli_version: 0.17.0
     framework: torch
@@ -175,6 +181,7 @@ _wandb:
       - 41
       - 55
       3:
+      - 2
       - 13
       - 16
       - 19

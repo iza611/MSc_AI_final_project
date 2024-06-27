@@ -8,3 +8,6 @@ training/wandb/run-20240626_220555-idsp78b8/run-idsp78b8.wandb filter=lfs diff=l
 training/wandb/run-20240627_080524-kfcit3rc/run-kfcit3rc.wandb filter=lfs diff=lfs merge=lfs -text
 training/wandb/run-20240627_091600-jtfgm7fi/run-jtfgm7fi.wandb filter=lfs diff=lfs merge=lfs -text
 training/wandb/run-20240627_110946-9fb1canq/run-9fb1canq.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240627_131116-027z1wvj/run-027z1wvj.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240627_152449-a2msp3ue/run-a2msp3ue.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240627_173958-21ychv34/run-21ychv34.wandb filter=lfs diff=lfs merge=lfs -text
