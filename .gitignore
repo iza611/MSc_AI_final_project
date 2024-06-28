@@ -20,4 +20,7 @@ git-lfs_3.5.1_amd64.deb
 install_git_lfs.sh
 
 # Ignore datasets directory
-datasets/
+datasets/HaGRID/
+datasets/MIAP/
+datasets/SIGGI/
+datasets/quali_tests/

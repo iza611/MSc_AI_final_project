@@ -11,3 +11,9 @@ training/wandb/run-20240627_110946-9fb1canq/run-9fb1canq.wandb filter=lfs diff=l
 training/wandb/run-20240627_131116-027z1wvj/run-027z1wvj.wandb filter=lfs diff=lfs merge=lfs -text
 training/wandb/run-20240627_152449-a2msp3ue/run-a2msp3ue.wandb filter=lfs diff=lfs merge=lfs -text
 training/wandb/run-20240627_173958-21ychv34/run-21ychv34.wandb filter=lfs diff=lfs merge=lfs -text
+datasets/SIGGI/* filter=lfs diff=lfs merge=lfs -text
+datasets/quali_tests/person_detection/* filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240627_215635-577mbmrh/run-577mbmrh.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240628_083753-hnemaraa/run-hnemaraa.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240628_121227-bdveos5m/run-bdveos5m.wandb filter=lfs diff=lfs merge=lfs -text
+training/wandb/run-20240628_142836-20t95cud/run-20t95cud.wandb filter=lfs diff=lfs merge=lfs -text
