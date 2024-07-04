@@ -302,7 +302,7 @@ def train(hyp, opt, device, tb_writer=None):
     model.names = names
     
     # Early stopping parameters
-    early_stopping_patience = 5  
+    early_stopping_patience = 5 
     best_val_obj_loss = np.inf
     patience_counter = 0
 
@@ -498,18 +498,19 @@ def train(hyp, opt, device, tb_writer=None):
                 del ckpt
                 
             # Early Stopping Check
-            val_obj_loss = results[5]  
-            print(f"val_obj_loss={val_obj_loss}")   # TODO: delete this print statement
-            if val_obj_loss < best_val_obj_loss:
-                best_val_obj_loss = val_obj_loss
-                patience_counter = 0
-            else:
-                patience_counter += 1
-            print(f"patience_counter={patience_counter}")
+            if opt.early_stop:
+                val_obj_loss = results[5]  
+                print(f"val_obj_loss={val_obj_loss}")   # TODO: delete this print statement
+                if val_obj_loss < best_val_obj_loss:
+                    best_val_obj_loss = val_obj_loss
+                    patience_counter = 0
+                else:
+                    patience_counter += 1
+                print(f"patience_counter={patience_counter}")
 
-            if patience_counter >= early_stopping_patience:
-                print(f"Early stopping at epoch {epoch + 1} due to no improvement in validation object loss.")
-                break
+                if patience_counter >= early_stopping_patience:
+                    print(f"Early stopping at epoch {epoch + 1} due to no improvement in validation object loss.")
+                    break
 
         # end epoch ----------------------------------------------------------------------------------------------------
     # end training
@@ -614,6 +615,7 @@ if __name__ == '__main__':
     wandb_run = check_wandb_resume(opt)
     if opt.resume and not wandb_run:  # resume an interrupted run
         ckpt = opt.resume if isinstance(opt.resume, str) else get_latest_run()  # specified or most recent path
+        # ckpt = "./runs/train/SIGGI_target_detection/SIGGI_2/weights/last.pt"
         assert os.path.isfile(ckpt), 'ERROR: --resume checkpoint does not exist'
         apriori = opt.global_rank, opt.local_rank
         with open(Path(ckpt).parent.parent / 'opt.yaml') as f:

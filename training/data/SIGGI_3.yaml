@@ -1,0 +1,9 @@
+train: ./../datasets/SIGGI/targets/3/images/train/ 
+val:  ./../datasets/SIGGI/targets/3/images/val/
+test: ./../datasets/SIGGI/targets/3/images/val/
+
+# number of classes
+nc: 1
+
+# class names
+names: ["target"]
