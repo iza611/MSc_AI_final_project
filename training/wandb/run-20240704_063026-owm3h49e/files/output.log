@@ -1,0 +1,1145 @@
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  2                -1  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  3                -2  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  4                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  5                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  6  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+  7                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  8                -1  1         0  models.common.MP                        []
+  9                -1  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 10                -2  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 11                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 12                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 13  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 15                -1  1         0  models.common.MP                        []
+ 16                -1  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 17                -2  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 20  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 21                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 22                -1  1         0  models.common.MP                        []
+ 23                -1  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 24                -2  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 25                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 26                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 27  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 28                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 29                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 30                -2  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 31                -1  1         0  models.common.SP                        [5]
+ 32                -2  1         0  models.common.SP                        [9]
+ 33                -3  1         0  models.common.SP                        [13]
+ 34  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 35                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 36          [-1, -7]  1         0  models.common.Concat                    [1]
+ 37                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 38                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 39                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 40                21  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 41          [-1, -2]  1         0  models.common.Concat                    [1]
+ 42                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 43                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 44                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 45                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 46  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 47                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 48                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 49                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 50                14  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 51          [-1, -2]  1         0  models.common.Concat                    [1]
+ 52                -1  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 53                -2  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 54                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 55                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 56  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 57                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 58                -1  1     73984  models.common.Conv                      [64, 128, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 59          [-1, 47]  1         0  models.common.Concat                    [1]
+ 60                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 61                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 62                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 63                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 64  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 65                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 66                -1  1    295424  models.common.Conv                      [128, 256, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 67          [-1, 37]  1         0  models.common.Concat                    [1]
+ 68                -1  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 69                -2  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 70                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 71                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 72  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 73                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 74                57  1     73984  models.common.Conv                      [64, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 75                65  1    295424  models.common.Conv                      [128, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 76                73  1   1180672  models.common.Conv                      [256, 512, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 77      [74, 75, 76]  1     17132  models.yolo.IDetect                     [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+/home/jovyan/yolo/lib/python3.10/site-packages/torch/functional.py:512: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3587.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Model Summary: 263 layers, 6014988 parameters, 6014988 gradients, 13.2 GFLOPS
+Transferred 344/344 items from ./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt
+Scaled weight_decay = 0.0005
+Optimizer groups: 58 .bias, 58 conv.weight, 61 other
+Model moved to device: cuda:0
+Resuming training from ./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt
+YOLOR 🚀 db740ca torch 2.3.0+cu121 CUDA:0 (NVIDIA A100 80GB PCIe, 81221.8125MB)
+Namespace(weights='./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt', cfg='', data='./data/SIGGI_1.yaml', hyp='./model/yolov7/data/hyp.scratch.tiny.yaml', epochs=50, batch_size=32, img_size=[1024, 1024], rect=False, resume=True, nosave=False, notest=False, noautoanchor=False, evolve=False, bucket='', cache_images=False, image_weights=False, device='0', multi_scale=True, single_cls=False, adam=False, sync_bn=False, local_rank=-1, workers=8, project='runs/train/SIGGI_target_detection', entity=None, name='SIGGI_1', exist_ok=False, quad=True, linear_lr=False, label_smoothing=0.0, upload_dataset=False, bbox_interval=-1, save_period=-1, artifact_alias='latest', freeze=[0], v5_metric=True, early_stop=False, world_size=1, global_rank=-1, save_dir='runs/train/SIGGI_target_detection/SIGGI_1', total_batch_size=32)
+[34m[1mtensorboard: [39m[22mStart with 'tensorboard --logdir runs/train/SIGGI_target_detection', view at http://localhost:6006/
+[34m[1mhyperparameters: [39m[22mlr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.05, copy_paste=0.0, paste_in=0.05, loss_ota=1
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  2                -1  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  3                -2  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  4                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  5                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  6  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+  7                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  8                -1  1         0  models.common.MP                        []
+  9                -1  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 10                -2  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 11                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 12                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 13  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 15                -1  1         0  models.common.MP                        []
+ 16                -1  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 17                -2  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 20  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 21                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 22                -1  1         0  models.common.MP                        []
+ 23                -1  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 24                -2  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 25                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 26                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 27  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 28                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 29                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 30                -2  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 31                -1  1         0  models.common.SP                        [5]
+ 32                -2  1         0  models.common.SP                        [9]
+ 33                -3  1         0  models.common.SP                        [13]
+ 34  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 35                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 36          [-1, -7]  1         0  models.common.Concat                    [1]
+ 37                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 38                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 39                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 40                21  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 41          [-1, -2]  1         0  models.common.Concat                    [1]
+ 42                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 43                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 44                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 45                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 46  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 47                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 48                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 49                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 50                14  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 51          [-1, -2]  1         0  models.common.Concat                    [1]
+ 52                -1  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 53                -2  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 54                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 55                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 56  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 57                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 58                -1  1     73984  models.common.Conv                      [64, 128, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 59          [-1, 47]  1         0  models.common.Concat                    [1]
+ 60                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 61                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 62                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 63                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 64  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 65                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 66                -1  1    295424  models.common.Conv                      [128, 256, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 67          [-1, 37]  1         0  models.common.Concat                    [1]
+ 68                -1  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 69                -2  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 70                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 71                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 72  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 73                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 74                57  1     73984  models.common.Conv                      [64, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 75                65  1    295424  models.common.Conv                      [128, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 76                73  1   1180672  models.common.Conv                      [256, 512, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 77      [74, 75, 76]  1     17132  models.yolo.IDetect                     [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Device argument received: 0
+Weights path received: ./runs/train/MIAP_person_detection/weights/best.pt
+Device selected: cuda:0
+Model Summary: 263 layers, 6014988 parameters, 6014988 gradients, 13.2 GFLOPS
+Transferred 344/344 items from ./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt
+Scaled weight_decay = 0.0005
+Optimizer groups: 58 .bias, 58 conv.weight, 61 other
+Model moved to device: cuda:0
+Device argument received: 0
+Weights path received: ./runs/train/SIGGI_target_detection/SIGGI_2/weights/last.pt
+Device selected: cuda:0
+Resuming training from ./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt
+YOLOR 🚀 db740ca torch 2.3.0+cu121 CUDA:0 (NVIDIA A100 80GB PCIe, 81221.8125MB)
+Namespace(weights='./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt', cfg='', data='./data/SIGGI_1.yaml', hyp='./model/yolov7/data/hyp.scratch.tiny.yaml', epochs=50, batch_size=32, img_size=[1024, 1024], rect=False, resume=True, nosave=False, notest=False, noautoanchor=False, evolve=False, bucket='', cache_images=False, image_weights=False, device='0', multi_scale=True, single_cls=False, adam=False, sync_bn=False, local_rank=-1, workers=8, project='runs/train/SIGGI_target_detection', entity=None, name='SIGGI_1', exist_ok=False, quad=True, linear_lr=False, label_smoothing=0.0, upload_dataset=False, bbox_interval=-1, save_period=-1, artifact_alias='latest', freeze=[0], v5_metric=True, early_stop=False, world_size=1, global_rank=-1, save_dir='runs/train/SIGGI_target_detection/SIGGI_1', total_batch_size=32)
+[34m[1mtensorboard: [39m[22mStart with 'tensorboard --logdir runs/train/SIGGI_target_detection', view at http://localhost:6006/
+[34m[1mhyperparameters: [39m[22mlr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.05, copy_paste=0.0, paste_in=0.05, loss_ota=1
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  2                -1  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  3                -2  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  4                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  5                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  6  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+  7                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  8                -1  1         0  models.common.MP                        []
+  9                -1  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 10                -2  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 11                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 12                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 13  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 15                -1  1         0  models.common.MP                        []
+ 16                -1  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 17                -2  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 20  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 21                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 22                -1  1         0  models.common.MP                        []
+ 23                -1  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 24                -2  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 25                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 26                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 27  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 28                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 29                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 30                -2  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 31                -1  1         0  models.common.SP                        [5]
+ 32                -2  1         0  models.common.SP                        [9]
+ 33                -3  1         0  models.common.SP                        [13]
+ 34  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 35                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 36          [-1, -7]  1         0  models.common.Concat                    [1]
+ 37                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 38                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 39                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 40                21  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 41          [-1, -2]  1         0  models.common.Concat                    [1]
+ 42                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 43                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 44                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 45                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 46  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 47                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 48                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 49                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 50                14  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 51          [-1, -2]  1         0  models.common.Concat                    [1]
+ 52                -1  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 53                -2  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 54                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 55                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 56  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 57                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 58                -1  1     73984  models.common.Conv                      [64, 128, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 59          [-1, 47]  1         0  models.common.Concat                    [1]
+ 60                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 61                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 62                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 63                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 64  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 65                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 66                -1  1    295424  models.common.Conv                      [128, 256, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 67          [-1, 37]  1         0  models.common.Concat                    [1]
+ 68                -1  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 69                -2  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 70                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 71                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 72  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 73                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 74                57  1     73984  models.common.Conv                      [64, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 75                65  1    295424  models.common.Conv                      [128, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 76                73  1   1180672  models.common.Conv                      [256, 512, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 77      [74, 75, 76]  1     17132  models.yolo.IDetect                     [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model moved to device: cuda:0
+Model Summary: 263 layers, 6014988 parameters, 6014988 gradients, 13.2 GFLOPS
+Transferred 344/344 items from ./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt
+Scaled weight_decay = 0.0005
+Optimizer groups: 58 .bias, 58 conv.weight, 61 other
+Device argument received: 0
+Weights path received: ./runs/train/SIGGI_target_detection/SIGGI_2/weights/last.pt
+Device selected: cuda:0
+Resuming training from ./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt
+YOLOR 🚀 db740ca torch 2.3.0+cu121 CUDA:0 (NVIDIA A100 80GB PCIe, 81221.8125MB)
+Namespace(weights='./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt', cfg='', data='./data/SIGGI_1.yaml', hyp='./model/yolov7/data/hyp.scratch.tiny.yaml', epochs=50, batch_size=32, img_size=[1024, 1024], rect=False, resume=True, nosave=False, notest=False, noautoanchor=False, evolve=False, bucket='', cache_images=False, image_weights=False, device='0', multi_scale=True, single_cls=False, adam=False, sync_bn=False, local_rank=-1, workers=8, project='runs/train/SIGGI_target_detection', entity=None, name='SIGGI_1', exist_ok=False, quad=True, linear_lr=False, label_smoothing=0.0, upload_dataset=False, bbox_interval=-1, save_period=-1, artifact_alias='latest', freeze=[0], v5_metric=True, early_stop=False, world_size=1, global_rank=-1, save_dir='runs/train/SIGGI_target_detection/SIGGI_1', total_batch_size=32)
+[34m[1mtensorboard: [39m[22mStart with 'tensorboard --logdir runs/train/SIGGI_target_detection', view at http://localhost:6006/
+[34m[1mhyperparameters: [39m[22mlr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.05, copy_paste=0.0, paste_in=0.05, loss_ota=1
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  2                -1  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  3                -2  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  4                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  5                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  6  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+  7                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  8                -1  1         0  models.common.MP                        []
+  9                -1  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 10                -2  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 11                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 12                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 13  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 15                -1  1         0  models.common.MP                        []
+ 16                -1  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 17                -2  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 20  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 21                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 22                -1  1         0  models.common.MP                        []
+ 23                -1  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 24                -2  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 25                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 26                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 27  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 28                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 29                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 30                -2  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 31                -1  1         0  models.common.SP                        [5]
+ 32                -2  1         0  models.common.SP                        [9]
+ 33                -3  1         0  models.common.SP                        [13]
+ 34  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 35                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 36          [-1, -7]  1         0  models.common.Concat                    [1]
+ 37                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 38                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 39                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 40                21  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 41          [-1, -2]  1         0  models.common.Concat                    [1]
+ 42                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 43                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 44                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 45                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 46  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 47                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 48                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 49                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 50                14  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 51          [-1, -2]  1         0  models.common.Concat                    [1]
+ 52                -1  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 53                -2  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 54                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 55                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 56  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 57                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 58                -1  1     73984  models.common.Conv                      [64, 128, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 59          [-1, 47]  1         0  models.common.Concat                    [1]
+ 60                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 61                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 62                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 63                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 64  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 65                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 66                -1  1    295424  models.common.Conv                      [128, 256, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 67          [-1, 37]  1         0  models.common.Concat                    [1]
+ 68                -1  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 69                -2  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 70                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 71                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 72  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 73                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 74                57  1     73984  models.common.Conv                      [64, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 75                65  1    295424  models.common.Conv                      [128, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 76                73  1   1180672  models.common.Conv                      [256, 512, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 77      [74, 75, 76]  1     17132  models.yolo.IDetect                     [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model moved to device: cuda:0
+Model Summary: 263 layers, 6014988 parameters, 6014988 gradients, 13.2 GFLOPS
+Transferred 344/344 items from ./runs/train/SIGGI_target_detection/SIGGI_5/weights/last.pt
+Scaled weight_decay = 0.0005
+Optimizer groups: 58 .bias, 58 conv.weight, 61 other
+Device argument received: 0
+Weights path received: ./runs/train/SIGGI_target_detection/SIGGI_2/weights/last.pt
+Device selected: cuda:0
+Resuming training from ./runs/train/SIGGI_target_detection/SIGGI_2/weights/last.pt
+YOLOR 🚀 db740ca torch 2.3.0+cu121 CUDA:0 (NVIDIA A100 80GB PCIe, 81221.8125MB)
+Namespace(weights='./runs/train/SIGGI_target_detection/SIGGI_2/weights/last.pt', cfg='', data='./data/SIGGI_2.yaml', hyp='./model/yolov7/data/hyp.scratch.tiny.yaml', epochs=50, batch_size=32, img_size=[1024, 1024], rect=False, resume=True, nosave=False, notest=False, noautoanchor=False, evolve=False, bucket='', cache_images=False, image_weights=False, device='0', multi_scale=True, single_cls=False, adam=False, sync_bn=False, local_rank=-1, workers=8, project='runs/train/SIGGI_target_detection', entity=None, name='SIGGI_2', exist_ok=False, quad=True, linear_lr=False, label_smoothing=0.0, upload_dataset=False, bbox_interval=-1, save_period=-1, artifact_alias='latest', freeze=[0], v5_metric=True, early_stop=False, world_size=1, global_rank=-1, save_dir='runs/train/SIGGI_target_detection/SIGGI_2', total_batch_size=32)
+[34m[1mtensorboard: [39m[22mStart with 'tensorboard --logdir runs/train/SIGGI_target_detection', view at http://localhost:6006/
+[34m[1mhyperparameters: [39m[22mlr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.05, copy_paste=0.0, paste_in=0.05, loss_ota=1
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  2                -1  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  3                -2  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  4                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  5                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  6  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+  7                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  8                -1  1         0  models.common.MP                        []
+  9                -1  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 10                -2  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 11                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 12                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 13  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 15                -1  1         0  models.common.MP                        []
+ 16                -1  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 17                -2  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 20  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 21                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 22                -1  1         0  models.common.MP                        []
+ 23                -1  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 24                -2  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 25                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 26                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 27  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 28                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 29                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 30                -2  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 31                -1  1         0  models.common.SP                        [5]
+ 32                -2  1         0  models.common.SP                        [9]
+ 33                -3  1         0  models.common.SP                        [13]
+ 34  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 35                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 36          [-1, -7]  1         0  models.common.Concat                    [1]
+ 37                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 38                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 39                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 40                21  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 41          [-1, -2]  1         0  models.common.Concat                    [1]
+ 42                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 43                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 44                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 45                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 46  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 47                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 48                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 49                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 50                14  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 51          [-1, -2]  1         0  models.common.Concat                    [1]
+ 52                -1  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 53                -2  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 54                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 55                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 56  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 57                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 58                -1  1     73984  models.common.Conv                      [64, 128, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 59          [-1, 47]  1         0  models.common.Concat                    [1]
+ 60                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 61                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 62                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 63                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 64  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 65                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 66                -1  1    295424  models.common.Conv                      [128, 256, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 67          [-1, 37]  1         0  models.common.Concat                    [1]
+ 68                -1  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 69                -2  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 70                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 71                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 72  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 73                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 74                57  1     73984  models.common.Conv                      [64, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 75                65  1    295424  models.common.Conv                      [128, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 76                73  1   1180672  models.common.Conv                      [256, 512, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 77      [74, 75, 76]  1     17132  models.yolo.IDetect                     [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 263 layers, 6014988 parameters, 6014988 gradients, 13.2 GFLOPS
+Transferred 344/344 items from ./runs/train/SIGGI_target_detection/SIGGI_2/weights/last.pt
+Scaled weight_decay = 0.0005
+Optimizer groups: 58 .bias, 58 conv.weight, 61 other
+Model moved to device: cuda:0
+Device argument received: 0
+Weights path received: ./runs/train/MIAP_person_detection/weights/best.pt
+Device argument received: 0
+Weights path received: ./runs/train/MIAP_person_detection/weights/best.pt
+Device selected: cuda:0
+YOLOR 🚀 db740ca torch 2.3.0+cu121 CUDA:0 (NVIDIA A100 80GB PCIe, 81221.8125MB)
+Namespace(weights='./runs/train/MIAP_person_detection/weights/best.pt', cfg='./model/yolov7-tiny.yaml', data='./data/SIGGI_3.yaml', hyp='./model/yolov7/data/hyp.scratch.tiny.yaml', epochs=50, batch_size=32, img_size=[1024, 1024], rect=False, resume=False, nosave=False, notest=False, noautoanchor=False, evolve=False, bucket='', cache_images=False, image_weights=False, device='0', multi_scale=True, single_cls=False, adam=False, sync_bn=False, local_rank=-1, workers=8, project='runs/train/SIGGI_target_detection', entity=None, name='SIGGI_3', exist_ok=False, quad=True, linear_lr=False, label_smoothing=0.0, upload_dataset=False, bbox_interval=-1, save_period=-1, artifact_alias='latest', freeze=[0], v5_metric=True, early_stop=False, world_size=1, global_rank=-1, save_dir='runs/train/SIGGI_target_detection/SIGGI_3', total_batch_size=32)
+[34m[1mtensorboard: [39m[22mStart with 'tensorboard --logdir runs/train/SIGGI_target_detection', view at http://localhost:6006/
+[34m[1mhyperparameters: [39m[22mlr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.5, cls_pw=1.0, obj=1.0, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.05, copy_paste=0.0, paste_in=0.05, loss_ota=1
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+  2                -1  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  3                -2  1      2112  models.common.Conv                      [64, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  4                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  5                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  6  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+  7                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+  8                -1  1         0  models.common.MP                        []
+  9                -1  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 10                -2  1      4224  models.common.Conv                      [64, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 11                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 12                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 13  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 15                -1  1         0  models.common.MP                        []
+ 16                -1  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 17                -2  1     16640  models.common.Conv                      [128, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 20  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 21                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 22                -1  1         0  models.common.MP                        []
+ 23                -1  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 24                -2  1     66048  models.common.Conv                      [256, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 25                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 26                -1  1    590336  models.common.Conv                      [256, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 27  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 28                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 29                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 30                -2  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 31                -1  1         0  models.common.SP                        [5]
+ 32                -2  1         0  models.common.SP                        [9]
+ 33                -3  1         0  models.common.SP                        [13]
+ 34  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 35                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 36          [-1, -7]  1         0  models.common.Concat                    [1]
+ 37                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 38                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 39                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 40                21  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 41          [-1, -2]  1         0  models.common.Concat                    [1]
+ 42                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 43                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 44                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 45                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 46  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 47                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 48                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 49                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 50                14  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 51          [-1, -2]  1         0  models.common.Concat                    [1]
+ 52                -1  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 53                -2  1      4160  models.common.Conv                      [128, 32, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 54                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 55                -1  1      9280  models.common.Conv                      [32, 32, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 56  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 57                -1  1      8320  models.common.Conv                      [128, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 58                -1  1     73984  models.common.Conv                      [64, 128, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 59          [-1, 47]  1         0  models.common.Concat                    [1]
+ 60                -1  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 61                -2  1     16512  models.common.Conv                      [256, 64, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 62                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 63                -1  1     36992  models.common.Conv                      [64, 64, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 64  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 65                -1  1     33024  models.common.Conv                      [256, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 66                -1  1    295424  models.common.Conv                      [128, 256, 3, 2, None, 1, LeakyReLU(negative_slope=0.1)]
+ 67          [-1, 37]  1         0  models.common.Concat                    [1]
+ 68                -1  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 69                -2  1     65792  models.common.Conv                      [512, 128, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 70                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 71                -1  1    147712  models.common.Conv                      [128, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 72  [-1, -2, -3, -4]  1         0  models.common.Concat                    [1]
+ 73                -1  1    131584  models.common.Conv                      [512, 256, 1, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 74                57  1     73984  models.common.Conv                      [64, 128, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 75                65  1    295424  models.common.Conv                      [128, 256, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 76                73  1   1180672  models.common.Conv                      [256, 512, 3, 1, None, 1, LeakyReLU(negative_slope=0.1)]
+ 77      [74, 75, 76]  1     17132  models.yolo.IDetect                     [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 263 layers, 6014988 parameters, 6014988 gradients, 13.2 GFLOPS
+Transferred 342/344 items from ./runs/train/MIAP_person_detection/weights/best.pt
+Scaled weight_decay = 0.0005
+Optimizer groups: 58 .bias, 58 conv.weight, 61 other
+[34m[1mtrain: [39m[22mScanning '../datasets/SIGGI/targets/3/labels/train' images and labels... 312 found, 0 missing, 180 empty, 0 corrupted:  65%|██████▌   | 312/480 [00:01<00:00, 274.28it/s]
+[34m[1mtrain: [39m[22mScanning '../datasets/SIGGI/targets/3/labels/train' images and labels... 480 found, 0 missing, 240 empty, 0 corrupted: 100%|██████████| 480/480 [00:01<00:00, 306.29it/s]
+[34m[1mtrain: [39m[22mNew cache created: ../datasets/SIGGI/targets/3/labels/train.cache
+[34m[1mval: [39m[22mScanning '../datasets/SIGGI/targets/3/labels/val' images and labels... 120 found, 0 missing, 60 empty, 0 corrupted: 100%|██████████| 120/120 [00:01<00:00, 107.62it/s]
+[34m[1mval: [39m[22mNew cache created: ../datasets/SIGGI/targets/3/labels/val.cache
+Image sizes 1024 train, 1024 test
+Using 8 dataloader workers
+Logging results to runs/train/SIGGI_target_detection/SIGGI_3
+Starting training for 50 epochs...
+[34m[1mautoanchor: [39m[22mAnalyzing anchors... anchors/target = 3.59, Best Possible Recall (BPR) = 1.0000
+Epoch 0/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/15 [00:00<?, ?it/s]/home/jovyan/training/model/yolov7/train.py:373: DeprecationWarning: non-integer arguments to randrange() have been deprecated since Python 3.10 and will be removed in a subsequent version
+  sz = random.randrange(imgsz * 0.5, imgsz * 1.5 + gs) // gs * gs  # size
+
+
+
+
+
+
+
+
+
+
+
+
+      0/49     1.43G   0.02835   0.03562         0   0.06397        24      1376:  93%|█████████▎| 14/15 [05:08<00:08,  8.25s/it]
+      0/49    0.661G   0.02901   0.03687         0   0.06588        32       512: 100%|██████████| 15/15 [05:10<00:00, 20.71s/it]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:04<00:04,  4.02s/it]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:09<00:00,  4.71s/it]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+      1/49     5.55G   0.02098   0.01531         0   0.03629        35      1408:   7%|▋         | 1/15 [00:00<00:05,  2.37it/s]
+
+
+
+
+
+      1/49     7.18G   0.02618   0.02787         0   0.05405        30      1408: 100%|██████████| 15/15 [02:42<00:00, 10.81s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.76it/s]
+Testing with YOLOv5 AP metric...
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.56it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+      2/49     12.7G   0.02785   0.02168         0   0.04952        51       960:  13%|█▎        | 2/15 [00:00<00:06,  2.16it/s]
+
+
+
+
+
+
+
+      2/49     2.46G   0.02693   0.01745         0   0.04439        26      1536: 100%|██████████| 15/15 [03:00<00:00, 12.02s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.66it/s]
+Testing with YOLOv5 AP metric...
+                 all         120          60       0.162       0.883       0.187       0.108
+Epoch 3/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+      3/49     1.23G    0.0233   0.01462         0   0.03792        24      1248: 100%|██████████| 15/15 [03:09<00:00, 12.64s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.53it/s]
+                 all         120          60       0.156       0.983       0.191       0.113
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+      4/49     8.63G   0.02157   0.01815         0   0.03972        38      1248:   7%|▋         | 1/15 [00:00<00:06,  2.00it/s]
+
+
+
+
+      4/49     6.68G   0.02541   0.01901         0   0.04442        24       576:  80%|████████  | 12/15 [01:35<00:08,  2.71s/it]
+      4/49     6.68G   0.02466   0.01892         0   0.04358        23       832: 100%|██████████| 15/15 [02:40<00:00, 10.73s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:17<00:00,  8.90s/it]
+Epoch 5/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+      5/49     12.3G   0.02542   0.01762         0   0.04304        24      1280:  93%|█████████▎| 14/15 [02:32<00:21, 21.13s/it]
+Testing with YOLOv5 AP metric...
+      5/49     12.3G   0.02528   0.01736         0   0.04263        37      1536: 100%|██████████| 15/15 [02:38<00:00, 10.54s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.56it/s]
+Epoch 6/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+      6/49     7.71G   0.02349   0.01497         0   0.03847        21       512:  93%|█████████▎| 14/15 [02:00<00:03,  3.27s/it]
+      6/49     7.71G   0.02334   0.01479         0   0.03814        21      1184: 100%|██████████| 15/15 [03:21<00:00, 13.41s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.57it/s]
+Epoch 7/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+      7/49     13.2G   0.02182   0.02225         0   0.04407        29      1056:  93%|█████████▎| 14/15 [01:49<00:05,  5.14s/it]
+Testing with YOLOv5 AP metric...
+      7/49     13.2G   0.02186   0.02249         0   0.04436        39       992: 100%|██████████| 15/15 [01:49<00:00,  7.31s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.57it/s]
+Epoch 8/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+      8/49     13.2G   0.02423   0.01712         0   0.04135        14      1056:  73%|███████▎  | 11/15 [02:36<00:54, 13.61s/it]
+      8/49     13.2G   0.02291   0.01572         0   0.03863        43      1504: 100%|██████████| 15/15 [02:47<00:00, 11.16s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  2.01it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.69it/s]
+Epoch 9/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+      9/49     13.2G    0.0236   0.02251         0   0.04611        31       544: 100%|██████████| 15/15 [03:19<00:00, 13.31s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:15<00:15, 15.89s/it]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:16<00:00,  8.24s/it]
+Epoch 10/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+     10/49     7.54G   0.02127    0.0166         0   0.03787        26      1152: 100%|██████████| 15/15 [02:40<00:00, 10.68s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.66it/s]
+                 all         120          60       0.331       0.733       0.337       0.237
+Epoch 11/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+
+     11/49     13.1G   0.02261   0.01803         0   0.04064        23      1024:  93%|█████████▎| 14/15 [02:45<00:13, 13.53s/it]
+     11/49     13.1G   0.02252   0.01903         0   0.04155        32       768: 100%|██████████| 15/15 [02:46<00:00, 11.09s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.66it/s]
+                 all         120          60       0.431       0.632       0.403       0.296
+Epoch 12/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+     12/49     13.1G   0.02266   0.01682         0   0.03948        25       896:  93%|█████████▎| 14/15 [03:07<00:20, 20.70s/it]
+     12/49     13.1G   0.02224   0.01618         0   0.03842        24      1504: 100%|██████████| 15/15 [03:07<00:00, 12.51s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.57it/s]
+                 all         120          60       0.506       0.633       0.552       0.418
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     13/49     13.1G   0.02165   0.03027         0   0.05192        28       704:   7%|▋         | 1/15 [00:00<00:05,  2.44it/s]
+
+
+
+
+
+     13/49     13.1G   0.02037   0.01374         0    0.0341        20       768:  93%|█████████▎| 14/15 [02:05<00:08,  8.72s/it]
+     13/49     13.1G   0.02085   0.01325         0    0.0341        14      1184: 100%|██████████| 15/15 [03:07<00:00, 12.53s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.55it/s]
+                 all         120          60       0.626       0.698       0.708       0.513
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     14/49     13.1G   0.03598  0.007553         0   0.04354        23      1376:   7%|▋         | 1/15 [00:00<00:06,  2.00it/s]
+
+
+
+
+     14/49     13.1G   0.02375   0.01468         0   0.03842        30       928: 100%|██████████| 15/15 [02:02<00:00,  8.15s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:17<00:00,  9.00s/it]
+                 all         120          60       0.714       0.666       0.712       0.562
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+
+
+
+     15/49     13.1G   0.02164   0.01185         0   0.03349        26       576: 100%|██████████| 15/15 [02:08<00:00,  8.58s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  2.00it/s]
+Testing with YOLOv5 AP metric...
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.67it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+
+
+
+
+     16/49     13.1G   0.01992   0.01041         0   0.03033        21       736: 100%|██████████| 15/15 [02:56<00:00, 11.79s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.32it/s]
+Testing with YOLOv5 AP metric...
+                 all         120          60       0.815       0.733       0.872       0.627
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+
+
+
+
+
+     17/49     13.1G   0.02452   0.01533         0   0.03985        41       832: 100%|██████████| 15/15 [02:49<00:00, 11.31s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.99it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.42it/s]
+                 all         120          60        0.87       0.667        0.84       0.639
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     18/49     13.1G    0.0223   0.01391         0   0.03621        29      1408:  13%|█▎        | 2/15 [00:01<00:06,  1.97it/s]
+
+
+
+
+
+     18/49     13.1G   0.02163   0.00974         0   0.03137        23      1472:  73%|███████▎  | 11/15 [02:07<00:50, 12.58s/it]
+     18/49     13.1G   0.02208   0.01037         0   0.03245        12      1152: 100%|██████████| 15/15 [03:15<00:00, 13.03s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  2.00it/s]
+                 all         120          60       0.878       0.716       0.889       0.684
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.82it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     19/49     13.1G   0.02455   0.01244         0     0.037        20      1152:  80%|████████  | 12/15 [01:55<00:24,  8.15s/it]
+     19/49     13.1G   0.02426   0.01174         0     0.036        25      1024: 100%|██████████| 15/15 [03:11<00:00, 12.76s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:14<00:00,  7.25s/it]
+Epoch 20/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     20/49     13.1G   0.02143  0.008025         0   0.02946        19       672:  87%|████████▋ | 13/15 [01:44<00:16,  8.23s/it]
+     20/49     13.1G   0.02159  0.009472         0   0.03106        42       672: 100%|██████████| 15/15 [02:39<00:00, 10.65s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.97it/s]
+                 all         120          60       0.937        0.75       0.909       0.632
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.67it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     21/49     13.1G   0.02299  0.009056         0   0.03205        19       960: 100%|██████████| 15/15 [02:58<00:00, 11.93s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+Testing with YOLOv5 AP metric...
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.55it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+
+
+
+
+     22/49     13.1G   0.02228   0.01258         0   0.03486        23       800:  93%|█████████▎| 14/15 [01:45<00:03,  3.42s/it]
+     22/49     13.1G   0.02258    0.0137         0   0.03628        38       704: 100%|██████████| 15/15 [01:58<00:00,  7.92s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.56it/s]
+                 all         120          60       0.891       0.833       0.933       0.718
+Epoch 23/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+     23/49     13.1G    0.0244  0.009172         0   0.03358        38       768:  93%|█████████▎| 14/15 [02:25<00:04,  4.03s/it]
+     23/49     13.1G   0.02422  0.009255         0   0.03348        26       928: 100%|██████████| 15/15 [02:25<00:00,  9.71s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.66it/s]
+                 all         120          60       0.931       0.899       0.962       0.753
+Epoch 24/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+     24/49     13.1G   0.02153  0.008854         0   0.03039        15      1024:  73%|███████▎  | 11/15 [02:53<01:08, 17.00s/it]
+     24/49     13.1G    0.0217   0.00887         0   0.03057        22      1024: 100%|██████████| 15/15 [02:54<00:00, 11.65s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:17<00:00,  8.85s/it]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+
+
+
+
+
+     25/49     13.1G   0.02298   0.01083         0   0.03382        30      1216:  87%|████████▋ | 13/15 [02:46<00:24, 12.43s/it]
+     25/49     13.1G   0.02305    0.0119         0   0.03496        35       768: 100%|██████████| 15/15 [02:46<00:00, 11.13s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.57it/s]
+                 all         120          60       0.912       0.867       0.955       0.688
+Epoch 26/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+     26/49     13.1G   0.02022  0.009522         0   0.02974        16       864:  73%|███████▎  | 11/15 [02:03<01:02, 15.73s/it]
+     26/49     13.1G   0.02006  0.008793         0   0.02885        28       960: 100%|██████████| 15/15 [02:51<00:00, 11.40s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.70it/s]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.55it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|          | 0/15 [00:00<?, ?it/s]
+
+
+
+
+
+     27/49     13.1G   0.02142  0.006957         0   0.02837        17      1536: 100%|██████████| 15/15 [03:26<00:00, 13.77s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+Testing with YOLOv5 AP metric...
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.68it/s]
+Epoch 28/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+     28/49     13.1G   0.02175  0.007828         0   0.02958        20      1376: 100%|██████████| 15/15 [03:03<00:00, 12.26s/it]
+Testing with YOLOv5 AP metric...
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.84it/s]
+                 all         120          60       0.964       0.899       0.965       0.752
+Epoch 29/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     29/49     13.1G   0.02226  0.009655         0   0.03191        15       672:  93%|█████████▎| 14/15 [02:02<00:04,  4.52s/it]
+     29/49     13.1G   0.02211  0.009996         0   0.03211        28       768: 100%|██████████| 15/15 [03:10<00:00, 12.67s/it]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:15<00:15, 15.80s/it]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:16<00:00,  8.25s/it]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     30/49     13.1G   0.02157   0.01599         0   0.03757        27       672:   7%|▋         | 1/15 [00:00<00:04,  3.20it/s]
+
+
+
+
+     30/49     13.1G   0.02026  0.007834         0    0.0281        41      1376:  93%|█████████▎| 14/15 [01:30<00:03,  3.29s/it]
+     30/49     13.1G    0.0202  0.007681         0   0.02788        38      1344: 100%|██████████| 15/15 [01:47<00:00,  7.17s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.54it/s]
+                 all         120          60       0.893       0.833       0.924       0.722
+Epoch 31/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     31/49     13.1G   0.02166  0.008912         0   0.03058         7       992:  73%|███████▎  | 11/15 [02:59<01:01, 15.27s/it]
+     31/49     13.1G   0.02123  0.009285         0   0.03052        31      1088: 100%|██████████| 15/15 [03:00<00:00, 12.04s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.99it/s]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.56it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     32/49     13.1G   0.01924   0.01655         0   0.03579        34       800:   7%|▋         | 1/15 [00:00<00:06,  2.03it/s]
+
+
+
+
+     32/49     13.1G   0.01847  0.006907         0   0.02537        23      1088: 100%|██████████| 15/15 [03:00<00:00, 12.01s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.41it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.24it/s]
+                 all         120          60       0.889       0.933       0.963       0.774
+Epoch 33/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+     33/49     13.1G   0.01983  0.009946         0   0.02977        21       512: 100%|██████████| 15/15 [03:01<00:00, 12.13s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.82it/s]
+                 all         120          60       0.915         0.9       0.963       0.761
+Epoch 34/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+     34/49     13.1G   0.01812  0.006322         0   0.02445        21      1536: 100%|██████████| 15/15 [02:52<00:00, 11.49s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:15<00:00,  7.86s/it]
+                 all         120          60       0.864        0.95       0.962       0.762
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     35/49     13.1G   0.01794  0.006304         0   0.02425        28      1440:  13%|█▎        | 2/15 [00:00<00:06,  2.16it/s]
+
+
+
+
+     35/49     13.1G   0.01821  0.006601         0   0.02481        14      1504: 100%|██████████| 15/15 [02:41<00:00, 10.77s/it]
+Testing with YOLOv5 AP metric...
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.44it/s]
+                 all         120          60       0.821       0.917       0.946       0.756
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     36/49     13.1G   0.01901   0.01058         0   0.02959        26       544:  20%|██        | 3/15 [00:01<00:04,  2.46it/s]
+
+
+
+     36/49     13.1G   0.02047  0.008559         0   0.02903        25       800: 100%|██████████| 15/15 [03:09<00:00, 12.61s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.79it/s]
+                 all         120          60       0.901       0.917       0.966       0.788
+Epoch 37/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+     37/49     13.1G   0.01866  0.007535         0    0.0262        29      1408: 100%|██████████| 15/15 [02:50<00:00, 11.39s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.66it/s]
+Testing with YOLOv5 AP metric...
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     38/49     13.1G   0.02284    0.0223         0   0.04514        18       832:  13%|█▎        | 2/15 [00:00<00:04,  2.88it/s]
+                 all         120          60       0.903       0.933       0.965       0.777
+
+
+
+     38/49     13.1G   0.01853  0.009855         0   0.02838        27       640:  93%|█████████▎| 14/15 [01:37<00:03,  3.63s/it]
+Testing with YOLOv5 AP metric...
+     38/49     13.1G   0.01877  0.009822         0    0.0286        14       640: 100%|██████████| 15/15 [01:37<00:00,  6.50s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.56it/s]
+Epoch 39/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+     39/49     13.1G    0.0172  0.005314         0   0.02252        22      1024:  93%|█████████▎| 14/15 [03:11<00:05,  5.22s/it]
+     39/49     13.1G   0.01726  0.005318         0   0.02258        30      1184: 100%|██████████| 15/15 [03:11<00:00, 12.80s/it]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:17<00:17, 17.11s/it]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:17<00:00,  8.91s/it]
+Epoch 40/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+     40/49     13.1G    0.0186  0.007372         0   0.02597        16       896:  67%|██████▋   | 10/15 [02:36<02:21, 28.31s/it]
+     40/49     13.1G   0.01893   0.00786         0   0.02679        26      1024: 100%|██████████| 15/15 [02:38<00:00, 10.53s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.69it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.55it/s]
+Epoch 41/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+     41/49     13.1G   0.01825  0.007794         0   0.02604        31       704:  93%|█████████▎| 14/15 [02:47<00:09,  9.28s/it]
+Testing with YOLOv5 AP metric...
+     41/49     13.1G   0.01809  0.007845         0   0.02593        30       960: 100%|██████████| 15/15 [02:48<00:00, 11.22s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.66it/s]
+Epoch 42/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+     42/49     13.1G   0.01873  0.008267         0   0.02699        11      1504:  73%|███████▎  | 11/15 [01:41<00:19,  4.84s/it]
+     42/49     13.1G   0.01883  0.007881         0   0.02671        27       736: 100%|██████████| 15/15 [03:14<00:00, 12.94s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  2.00it/s]
+                 all         120          60       0.921       0.967       0.976       0.804
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.79it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     43/49     13.1G   0.01547   0.00565         0   0.02112        31      1280:  93%|█████████▎| 14/15 [02:33<00:15, 15.96s/it]
+Testing with YOLOv5 AP metric...
+     43/49     13.1G   0.01558  0.005933         0   0.02152        30       928: 100%|██████████| 15/15 [02:33<00:00, 10.23s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.55it/s]
+Epoch 44/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     44/49     13.1G   0.01733  0.007243         0   0.02458        22      1280:  87%|████████▋ | 13/15 [01:57<00:16,  8.34s/it]
+     44/49     13.1G   0.01734   0.00732         0   0.02466        22       896: 100%|██████████| 15/15 [02:43<00:00, 10.93s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:18<00:00,  9.16s/it]
+Epoch 45/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     45/49     13.1G   0.01796   0.01128         0   0.02925        27      1120:  93%|█████████▎| 14/15 [01:51<00:07,  7.19s/it]
+     45/49     13.1G   0.01831   0.01244         0   0.03076        24       512: 100%|██████████| 15/15 [02:40<00:00, 10.69s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.48it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.26it/s]
+Epoch 46/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+     46/49     13.1G   0.01702   0.01116         0   0.02818        30       896:  93%|█████████▎| 14/15 [02:08<00:05,  5.49s/it]
+     46/49     13.1G   0.01669   0.01069         0   0.02739        29      1408: 100%|██████████| 15/15 [02:22<00:00,  9.49s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.68it/s]
+                 all         120          60       0.936       0.983       0.981       0.807
+Epoch 47/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+
+     47/49     13.1G   0.01635   0.00576         0    0.0221        18      1216:  80%|████████  | 12/15 [02:37<00:36, 12.29s/it]
+     47/49     13.1G    0.0165   0.00601         0   0.02251        20      1376: 100%|██████████| 15/15 [02:38<00:00, 10.54s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:  50%|█████     | 1/2 [00:00<00:00,  1.93it/s]
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.54it/s]
+Epoch 48/50 on device cuda:0
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+
+
+
+
+
+     48/49     13.1G    0.0171  0.009368         0   0.02647        32      1472: 100%|██████████| 15/15 [03:23<00:00, 13.54s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:   0%|          | 0/2 [00:00<?, ?it/s]
+Testing with YOLOv5 AP metric...
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:01<00:00,  1.79it/s]
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     49/49     13.1G   0.01542  0.004215         0   0.01963        25      1536:   7%|▋         | 1/15 [00:00<00:06,  2.06it/s]
+
+
+
+
+
+     49/49     13.1G   0.01745  0.008686         0   0.02613        21      1408:  73%|███████▎  | 11/15 [03:14<02:03, 30.82s/it]
+     49/49     13.1G   0.01778  0.008917         0    0.0267        33      1024: 100%|██████████| 15/15 [03:15<00:00, 13.05s/it]
+
+
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████| 2/2 [00:20<00:00, 10.30s/it]
+                 all         120          60       0.936       0.983        0.98       0.819
+Images sizes do not match. This will causes images to be display incorrectly in the UI.
+Optimizer stripped from runs/train/SIGGI_target_detection/SIGGI_3/weights/last.pt, 12.4MB
+50 epochs completed in 2.474 hours.
+Optimizer stripped from runs/train/SIGGI_target_detection/SIGGI_3/weights/best.pt, 12.4MB
+Images sizes do not match. This will causes images to be display incorrectly in the UI.
