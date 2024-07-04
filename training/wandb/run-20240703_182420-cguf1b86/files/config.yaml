@@ -1,0 +1,280 @@
+wandb_version: 1
+
+weights:
+  desc: null
+  value: ./runs/train/MIAP_person_detection/weights/best.pt
+cfg:
+  desc: null
+  value: ./model/yolov7-tiny.yaml
+data:
+  desc: null
+  value: ./data/SIGGI_2.yaml
+hyp:
+  desc: null
+  value:
+    lr0: 0.01
+    lrf: 0.01
+    momentum: 0.937
+    weight_decay: 0.0005
+    warmup_epochs: 3.0
+    warmup_momentum: 0.8
+    warmup_bias_lr: 0.1
+    box: 0.05
+    cls: 0.5
+    cls_pw: 1.0
+    obj: 1.0
+    obj_pw: 1.0
+    iou_t: 0.2
+    anchor_t: 4.0
+    fl_gamma: 0.0
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    degrees: 0.0
+    translate: 0.1
+    scale: 0.5
+    shear: 0.0
+    perspective: 0.0
+    flipud: 0.0
+    fliplr: 0.5
+    mosaic: 1.0
+    mixup: 0.05
+    copy_paste: 0.0
+    paste_in: 0.05
+    loss_ota: 1
+epochs:
+  desc: null
+  value: 50
+batch_size:
+  desc: null
+  value: 32
+img_size:
+  desc: null
+  value:
+  - 1024
+  - 1024
+rect:
+  desc: null
+  value: false
+resume:
+  desc: null
+  value: false
+nosave:
+  desc: null
+  value: false
+notest:
+  desc: null
+  value: false
+noautoanchor:
+  desc: null
+  value: false
+evolve:
+  desc: null
+  value: false
+bucket:
+  desc: null
+  value: ''
+cache_images:
+  desc: null
+  value: false
+image_weights:
+  desc: null
+  value: false
+device:
+  desc: null
+  value: '0'
+multi_scale:
+  desc: null
+  value: true
+single_cls:
+  desc: null
+  value: false
+adam:
+  desc: null
+  value: false
+sync_bn:
+  desc: null
+  value: false
+local_rank:
+  desc: null
+  value: -1
+workers:
+  desc: null
+  value: 8
+project:
+  desc: null
+  value: runs/train/SIGGI_target_detection
+entity:
+  desc: null
+  value: null
+name:
+  desc: null
+  value: SIGGI_2
+exist_ok:
+  desc: null
+  value: false
+quad:
+  desc: null
+  value: true
+linear_lr:
+  desc: null
+  value: false
+label_smoothing:
+  desc: null
+  value: 0.0
+upload_dataset:
+  desc: null
+  value: false
+bbox_interval:
+  desc: null
+  value: -1
+save_period:
+  desc: null
+  value: -1
+artifact_alias:
+  desc: null
+  value: latest
+freeze:
+  desc: null
+  value:
+  - 0
+v5_metric:
+  desc: null
+  value: true
+early_stop:
+  desc: null
+  value: false
+world_size:
+  desc: null
+  value: 1
+global_rank:
+  desc: null
+  value: -1
+save_dir:
+  desc: null
+  value: runs/train/SIGGI_target_detection/SIGGI_2
+total_batch_size:
+  desc: null
+  value: 32
+_wandb:
+  desc: null
+  value:
+    bounding_box/class_labels:
+      Bounding Box Debugger/Images_wandb_delimeter_predictions:
+        type: bounding_box/class_labels
+        key: Bounding Box Debugger/Images_wandb_delimeter_predictions
+        value:
+          '0': target
+    python_version: 3.10.13
+    cli_version: 0.17.0
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1720031060
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 2
+      - 13
+      - 16
+      - 19
+      - 23
+      4: 3.10.13
+      5: 0.17.0
+      8:
+      - 1
+      - 5
+      13: linux-x86_64
+opt:
+  desc: null
+  value:
+    weights: ./runs/train/MIAP_person_detection/weights/best.pt
+    cfg: ./model/yolov7-tiny.yaml
+    data: ./data/SIGGI_2.yaml
+    hyp:
+      lr0: 0.01
+      lrf: 0.01
+      momentum: 0.937
+      weight_decay: 0.0005
+      warmup_epochs: 3.0
+      warmup_momentum: 0.8
+      warmup_bias_lr: 0.1
+      box: 0.05
+      cls: 0.5
+      cls_pw: 1.0
+      obj: 1.0
+      obj_pw: 1.0
+      iou_t: 0.2
+      anchor_t: 4.0
+      fl_gamma: 0.0
+      hsv_h: 0.015
+      hsv_s: 0.7
+      hsv_v: 0.4
+      degrees: 0.0
+      translate: 0.1
+      scale: 0.5
+      shear: 0.0
+      perspective: 0.0
+      flipud: 0.0
+      fliplr: 0.5
+      mosaic: 1.0
+      mixup: 0.05
+      copy_paste: 0.0
+      paste_in: 0.05
+      loss_ota: 1
+    epochs: 50
+    batch_size: 32
+    img_size:
+    - 1024
+    - 1024
+    rect: false
+    resume: false
+    nosave: false
+    notest: false
+    noautoanchor: false
+    evolve: false
+    bucket: ''
+    cache_images: false
+    image_weights: false
+    device: '0'
+    multi_scale: true
+    single_cls: false
+    adam: false
+    sync_bn: false
+    local_rank: -1
+    workers: 8
+    project: runs/train/SIGGI_target_detection
+    entity: null
+    name: SIGGI_2
+    exist_ok: false
+    quad: true
+    linear_lr: false
+    label_smoothing: 0.0
+    upload_dataset: false
+    bbox_interval: -1
+    save_period: -1
+    artifact_alias: latest
+    freeze:
+    - 0
+    v5_metric: true
+    early_stop: false
+    world_size: 1
+    global_rank: -1
+    save_dir: runs/train/SIGGI_target_detection/SIGGI_2
+    total_batch_size: 32
+data_dict:
+  desc: null
+  value:
+    train: ./../datasets/SIGGI/targets/2/images/train/
+    val: ./../datasets/SIGGI/targets/2/images/val/
+    test: ./../datasets/SIGGI/targets/2/images/val/
+    nc: 1
+    names:
+    - target
