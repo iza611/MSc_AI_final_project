@@ -1,0 +1,288 @@
+{
+    "os": "Linux-6.6.9-200.fc39.x86_64-x86_64-with-glibc2.35",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-07-01T17:17:49.792156",
+    "startedAt": "2024-07-01T17:17:48.945035",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/jovyan/training/model/yolov7/train.py",
+    "codePathLocal": "model/yolov7/train.py",
+    "codePath": "training/model/yolov7/train.py",
+    "git": {
+        "remote": "https://github.com/iza611/MSc_AI_final_project.git",
+        "commit": "db740ca718405378c3d9fa2d31c44f9ed5879ce0"
+    },
+    "email": "ozogizabella@gmail.com",
+    "root": "/home/jovyan",
+    "host": "jupyter-ec22400",
+    "username": "jovyan",
+    "executable": "/home/jovyan/yolo/bin/python",
+    "cpu_count": 24,
+    "cpu_count_logical": 48,
+    "cpu_freq": {
+        "current": 1330.0393125,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 800.513,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.197,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.314,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1597.173,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1803.278,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1400.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.69,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 799.456,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1800.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 799.991,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.205,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 801.221,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.106,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.14,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 799.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3096.591,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.27,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.407,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 797.55,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1601.921,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 943.682,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 797.541,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 1001.003,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.764,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.254,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.593,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.994,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3270.574,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 799.991,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.373,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 800.455,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2100.0,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 892.6865043640137,
+            "used": 158.01699829101562
+        }
+    },
+    "gpu": "NVIDIA A40",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A40",
+            "memory_total": 48305799168
+        }
+    ],
+    "memory": {
+        "total": 503.3464584350586
+    }
+}
