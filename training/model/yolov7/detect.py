@@ -65,6 +65,9 @@ def detect(save_img=False):
         model(torch.zeros(1, 3, imgsz, imgsz).to(device).type_as(next(model.parameters())))  # run once
     old_img_w = old_img_h = imgsz
     old_img_b = 1
+    
+    inference_times = []
+    nms_times = []
 
     t0 = time.time()
     for path, img, im0s, vid_cap in dataset:
@@ -126,10 +129,12 @@ def detect(save_img=False):
 
                     if save_img or view_img:  # Add bbox to image
                         label = f'{names[int(cls)]} {conf:.2f}'
-                        plot_one_box(xyxy, im0, label=label, color=colors[int(cls)], line_thickness=1)
+                        plot_one_box(xyxy, im0, label=label, color=[255,0,0], line_thickness=3)
 
             # Print time (inference + NMS)
             print(f'{s}Done. ({(1E3 * (t2 - t1)):.1f}ms) Inference, ({(1E3 * (t3 - t2)):.1f}ms) NMS')
+            inference_times.append(1E3 * (t2 - t1))
+            nms_times.append(1E3 * (t3 - t2))
 
             # Stream results
             if view_img:
@@ -160,7 +165,11 @@ def detect(save_img=False):
         s = f"\n{len(list(save_dir.glob('labels/*.txt')))} labels saved to {save_dir / 'labels'}" if save_txt else ''
         #print(f"Results saved to {save_dir}{s}")
 
+    inference_avergae_ms = sum(inference_times)/len(inference_times)
+    nms_average_ms = sum(nms_times)/len(nms_times)
+        
     print(f'Done. ({time.time() - t0:.3f}s)')
+    print(f'{inference_avergae_ms}ms Average Inference, {nms_average_ms}ms Average NMS')
 
 
 if __name__ == '__main__':
