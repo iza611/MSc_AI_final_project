@@ -1,5 +1,6 @@
 # Ignore system and user-specific files and directories
 .bash_history
+.bash_history-01332.tmp
 .cache/
 .fiftyone/
 .gitconfig
@@ -24,3 +25,4 @@ datasets/HaGRID/
 datasets/MIAP/
 datasets/SIGGI/
 datasets/quali_tests/
+datasets/HaGRID_test/like/
