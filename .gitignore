@@ -19,6 +19,7 @@
 # Ignore specific files
 git-lfs_3.5.1_amd64.deb
 install_git_lfs.sh
+datasets_prep/traced_model.pt
 
 # Ignore datasets directory
 datasets/HaGRID/
@@ -26,3 +27,4 @@ datasets/MIAP/
 datasets/SIGGI/
 datasets/quali_tests/
 datasets/HaGRID_test/like/
+datasets/HaGRID_test_converted/
