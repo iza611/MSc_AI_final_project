@@ -29,7 +29,7 @@ def detect():
     source, weights, view_img, save_txt, imgsz, trace = opt.source, opt.weights, opt.view_img, opt.save_txt, opt.img_size, not opt.no_trace
     
     # Prep save dirs
-    save_path = "./../datasets/HaGRID_test_converted/"
+    save_path = "./../datasets/HaGRID_converted/"
     split_set = source.split('/')[-2]   # 'train', 'test', 'val' 
 
     imgs_save_path = join(save_path, 'images', split_set)

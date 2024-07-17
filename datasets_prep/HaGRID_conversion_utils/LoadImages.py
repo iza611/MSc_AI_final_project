@@ -7,7 +7,7 @@ import numpy as np
 import json
 
 import sys
-from os.path import abspath, join, dirname
+from os.path import abspath, join, dirname, splitext, basename
 base_path = abspath('./../training/model/yolov7/')
 sys.path.append(base_path)
 
@@ -31,7 +31,7 @@ class LoadImages:
         
         images = []
         for image_id in image_ids_set:
-            image_path = join(dirname(dirname(path)), 'like', image_id + '.jpg')
+            image_path = join(dirname(dirname(path)), splitext(basename(path))[0], image_id + '.jpg')
             images.append(image_path)
         
         print(f'list image path length = {len(images)}')
