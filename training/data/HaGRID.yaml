@@ -1,0 +1,9 @@
+train: ./../datasets/HaGRID_converted/images/train/ 
+val:  ./../datasets/HaGRID_converted/images/val/
+test: ./../datasets/HaGRID_converted/images/test/
+
+# number of classes
+nc: 5
+
+# class names
+names: ["none", "like", "ok", "palm", "two_up"]
