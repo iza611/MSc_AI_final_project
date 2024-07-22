@@ -1,0 +1,1 @@
+{"box_data": [{"position": {"minX": 264.0, "minY": 179.5, "maxX": 369.5, "maxY": 319.0}, "class_id": 1, "box_caption": "like 0.956", "scores": {"class_score": 0.95556640625}, "domain": "pixel"}], "class_labels": {"0": "none", "1": "like", "2": "ok", "3": "palm", "4": "two_up"}}
