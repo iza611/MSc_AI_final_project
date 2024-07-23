@@ -31,4 +31,4 @@ def crop_target_box(person_bboxs, im0s):
     x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
     cropped_image = im0s[y1:y2, x1:x2]
 
-    return cropped_image
+    return cropped_image, [x1, y1, x2, y2]
