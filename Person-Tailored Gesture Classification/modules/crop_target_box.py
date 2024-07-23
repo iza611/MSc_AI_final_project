@@ -4,7 +4,7 @@ import torch
 def crop_target_box(person_bboxs, im0s):
     
     if not len(person_bboxs):
-        return -1
+        return -1, [0,0,0,0]
     
     elif len(person_bboxs) == 1:
         x1, y1, x2, y2, _, _ = person_bboxs[0]
@@ -29,6 +29,6 @@ def crop_target_box(person_bboxs, im0s):
 #     print(f"x1: {x1}, y1: {y1}, x2: {x2}, y2: {y2}")
 
     x1, y1, x2, y2 = int(x1), int(y1), int(x2), int(y2)
-    cropped_image = im0s[y1:y2, x1:x2]
+    cropped_image = im0s[y1:y2, x1:x2].copy()
 
     return cropped_image, [x1, y1, x2, y2]
