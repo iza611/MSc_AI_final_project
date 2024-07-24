@@ -3,6 +3,7 @@ from tqdm import tqdm
 import os
 from matplotlib import pyplot as plt
 import cv2
+import numpy as np
 
 from modules.target_person_detection import target_person_detection
 from modules.crop_target_box import crop_target_box
@@ -17,13 +18,21 @@ from prep.plots import plot_one_box
 from prep.label_mapping import class_to_label
 from prep.save_predictions import covert_to_COCO_and_save_json
 
+def resize_with_aspect_ratio(image):
+    height = 640
+    (h, w) = image.shape[:2]
+    aspect_ratio = w / h
+    width = int(height * aspect_ratio)
+    resized_image = cv2.resize(image, (width, height))
+    return resized_image
+
 def main():
     target, img_source, show_plots, save = opt.target, opt.img_source, opt.show_plots, opt.save
     results = {}
     speed = []
     
     # Initialize
-    device = select_device('0')
+    device = select_device(opt.device)
     half = device.type != 'cpu' 
     
     # Load all models and prep everything that I'll need for inference
@@ -40,9 +49,9 @@ def main():
     
     # Initialize plot
     if show_plots:
-        num_columns = 3
+        num_columns = 1
         num_rows = (dataset.nf + num_columns - 1) // num_columns
-        fig, axes = plt.subplots(num_rows, num_columns * 2, figsize=(15, 5 * num_rows))
+        fig, axes = plt.subplots(num_rows, num_columns, figsize=(20, 5 * num_rows))
         plt.subplots_adjust(hspace=0.5)
         axes = axes.flatten()
         index = 0
@@ -79,27 +88,28 @@ def main():
         
         # Prep subplot
         if show_plots and not isinstance(person_extracted_img, int):
-            plot_one_box(xyxy, im0s, color=[0, 255, 0], label='target', line_thickness=8)
+            plot_one_box(xyxy, im0s, color=[255, 0, 0], label='target', line_thickness=15)
             for gesture_pred in gestures_preds:
                 label = str(round(gesture_pred[4], 2)) + " " + class_to_label(gesture_pred[5])
-                plot_one_box(gesture_pred[0:4], person_extracted_img, color=[0, 0, 255], label=label, line_thickness=4)
+                plot_one_box(gesture_pred[0:4], person_extracted_img, color=[0, 0, 255], label=label, line_thickness=8)
 
-            ax1 = axes[index * 2]
-            ax1.imshow(cv2.cvtColor(im0s, cv2.COLOR_BGR2RGB))
-            ax1.set_title(os.path.basename(path))
-            ax1.axis('off')
+            # Merge images horizontally
+            im0s_resized = resize_with_aspect_ratio(im0s)
+            person_extracted_img_resized = resize_with_aspect_ratio(person_extracted_img)
+            
+            line = np.full((640, 3, 3), [0, 0, 0], dtype=np.uint8)
+            combined_img = cv2.hconcat([im0s_resized, line, person_extracted_img_resized])
 
-            ax2 = axes[index * 2 + 1]
-            ax2.imshow(cv2.cvtColor(person_extracted_img, cv2.COLOR_BGR2RGB))
-            ax2.set_title(f'p={int(p)}')
-            ax2.axis('off')
+            ax = axes[index]
+            ax.imshow(cv2.cvtColor(combined_img, cv2.COLOR_BGR2RGB))
+            ax.set_title(os.path.basename(path) + f' | p={int(p)}')
+            ax.axis('off')
 
             index += 1
 
         
     # Print final results
     print(results)
-    print(speed)
     average_speed = (sum(speed) / len(speed))
     print(f"average time: {average_speed:.1f}ms")
     
@@ -112,13 +122,14 @@ def main():
     if save:
         covert_to_COCO_and_save_json(target, results)
         with open('./results/speed.txt', 'a') as f:
-            f.write(f"Target_{target}: {average_speed}\n") 
+            f.write(f"Target_{target}_device_{opt.device}: {average_speed}\n") 
         print(f"Average inference time saved to ./results/speed.txt")
     
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--target', type=int, default=0, help='ID number of the selected participant')
     parser.add_argument('--img-source', type=str, default='', help='path to image')
+    parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--conf-thres', type=float, default=0.25, help='object confidence threshold')
     parser.add_argument('--show-plots', action='store_true', help='whether the visualizations are printed along with code execution')
     parser.add_argument('--save', action='store_true', help='whether to save the results')
