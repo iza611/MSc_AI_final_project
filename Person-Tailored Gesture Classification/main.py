@@ -75,7 +75,7 @@ def main():
         else:
             # Detect gestures
             img = img_prep(person_extracted_img, device, half, cropped_img=True, stride=stride_g)
-            gestures_preds = gesture_recognition(gestures_model, path, img, person_extracted_img, opt.conf_thres)
+            gestures_preds = gesture_recognition(gestures_model, path, img, person_extracted_img, 0.6)
             
             # Classify
             p = gesture_synthesis(gestures_preds)

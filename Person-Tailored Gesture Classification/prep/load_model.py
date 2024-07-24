@@ -19,7 +19,7 @@ def load_model(weights_path, device, half, g):
     img_size = 1024
     imgsz = check_img_size(img_size, s=stride) 
     
-    # model = TracedModel(model, device, img_size, g)
+    model = TracedModel(model, device, img_size, g)
     
     if half:
         model.half() 
