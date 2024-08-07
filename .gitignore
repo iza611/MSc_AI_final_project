@@ -15,6 +15,7 @@
 .config/
 .netrc
 .bashrc
+.keras
 
 # Ignore specific files
 git-lfs_3.5.1_amd64.deb

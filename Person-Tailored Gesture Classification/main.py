@@ -89,7 +89,7 @@ def main():
             ax.set_title(os.path.basename(path) + f' | p={int(p)}')
             ax.axis('off')
             plt.show()
-            # plt.close(fig)
+            plt.close(fig)
         
         if show_plots and isinstance(person_extracted_img, int):
             fig, ax = plt.subplots(figsize=(20, 5))
@@ -97,7 +97,7 @@ def main():
             ax.set_title(os.path.basename(path) + f' | p={person_extracted_img}')
             ax.axis('off')
             plt.show()
-            # plt.close(fig)
+            plt.close(fig)
 
         
     # Print final results
