@@ -38,7 +38,35 @@ Repository content:
 ├── ...                                    # Other files and folders for project management, such as virtual environments, Git LFS, not uploaded to GitHub
 ```
 
-To run the full gesture classification pipeline for the selected target please follow steps:
-1.
-2.
-3.
+# Installation and Setup Guide
+## Download and Unpack the Program
+
+1. **Download**: Save the `program.tar.gz` file from the provided link to your computer.
+2. **Unpack**:
+   - **Windows**: Right-click the file, select “Extract All…”, and follow the prompts.
+   - **Mac/Linux**: Open Terminal, navigate to the file location, and run:
+     ```bash
+     tar -xzvf program.tar.gz
+     ```
+
+## Install Dependencies
+
+1. **Open Terminal/Command Prompt**:
+   - **Windows**: Search for “cmd” and open Command Prompt.
+   - **Mac/Linux**: Open Terminal.
+2. **Navigate to Folder**: Use `cd` to go to the folder containing `requirements.txt`.
+3. **Install**: Run:
+   ```bash
+   pip install -r requirements.txt
+
+## Open and Configure the Notebook
+
+1. **Start Jupyter Notebook**:
+   - Install Jupyter with pip install notebook if needed.
+   - Launch it by running jupyter notebook in Terminal/Command Prompt.
+2. **Open run.ipynb**: In the Jupyter interface, navigate to and open run.ipynb.
+3. **Modify Arguments**: Edit the arguments in the notebook as needed. Refer to main.py for details.
+
+## Run the Notebook
+
+1. **Execute Cells**: Click on each cell and press Shift + Enter to run them sequentially.
