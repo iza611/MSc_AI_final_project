@@ -1,6 +1,6 @@
-Detecting the hand gesture of the target person among a group of people showing various hand gestures.
+Detecting the hand gesture of the target person among a group of people. This was a working repository for preparing the datasets, training all the ML models and putting it all together into the 'Person-Tailored Gesture Classification' program. This was then packed into an easily downloadable 'program.tar.gz' file. 
 
-Repository content:
+# Repository content:
 ```
 ├── datasets
 │   ├── SIGGI_small           # Small subset of images from the SIGGI dataset for program presentation
@@ -41,7 +41,7 @@ Repository content:
 # Installation and Setup Guide
 ## Download and Unpack the Program
 
-1. **Download**: Save the `program.tar.gz` file from the provided link to your computer.
+1. **Download**: Save the `program.tar.gz` file to your computer.
 2. **Unpack**:
    - **Windows**: Right-click the file, select “Extract All…”, and follow the prompts.
    - **Mac/Linux**: Open Terminal, navigate to the file location, and run:
