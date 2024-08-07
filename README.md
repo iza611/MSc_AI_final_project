@@ -1,6 +1,7 @@
 Detecting the hand gesture of the target person among a group of people showing various hand gestures.
 
 Repository content:
+```
 ├── datasets
 │   ├── SIGGI_small           # Small subset of images from the SIGGI dataset for program presentation
 │   ├── ...                   # Directory containing all datasets (MIAP, HaGRID, SIGGI), totaling 271GB hence not uploaded to GitHub
@@ -35,6 +36,7 @@ Repository content:
 │
 ├── program.tar.gz                         # Compressed 'Person-Tailored Gesture Classification' folder for easier download
 ├── ...                                    # Other files and folders for project management, such as virtual environments, Git LFS, not uploaded to GitHub
+```
 
 To run the full gesture classification pipeline for the selected target please follow steps:
 1.
