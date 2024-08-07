@@ -32,3 +32,4 @@ training/wandb/run-20240704_130154-orkge817/run-orkge817.wandb filter=lfs diff=l
 training/wandb/run-20240704_164148-mmwi3550/run-mmwi3550.wandb filter=lfs diff=lfs merge=lfs -text
 evaluation/traced_model.pt filter=lfs diff=lfs merge=lfs -text
 evaluation/runs/detect/ filter=lfs diff=lfs merge=lfs -text
+datasets/SIGGI_small/* filter=lfs diff=lfs merge=lfs -text

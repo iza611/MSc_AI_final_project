@@ -39,16 +39,6 @@ def main():
     old_img_w = old_img_h = 1024
     old_img_b = 1
     
-    # Initialize plot
-    if show_plots:
-        num_columns = 1
-        # num_rows = (dataset.nf + num_columns - 1) // num_columns
-        num_rows = dataset.nf
-        fig, axes = plt.subplots(num_rows, num_columns, figsize=(20, 5 * num_rows))
-        plt.subplots_adjust(hspace=0.5)
-        axes = axes.flatten()
-        index = 0
-    
     for path, img, im0s in tqdm(dataset):
         img = img_prep(img, device, half)
         warmup(targets_model, device, old_img_b, old_img_h, old_img_w, img)
@@ -93,20 +83,21 @@ def main():
             line = np.full((640, 3, 3), [0, 0, 0], dtype=np.uint8)
             combined_img = cv2.hconcat([im0s_resized, line, person_extracted_img_resized])
 
-            ax = axes[index]
+            # Display plot
+            fig, ax = plt.subplots(figsize=(20, 5))
             ax.imshow(cv2.cvtColor(combined_img, cv2.COLOR_BGR2RGB))
             ax.set_title(os.path.basename(path) + f' | p={int(p)}')
             ax.axis('off')
-
-            index += 1
+            plt.show()
+            # plt.close(fig)
         
         if show_plots and isinstance(person_extracted_img, int):
-            ax = axes[index]
+            fig, ax = plt.subplots(figsize=(20, 5))
             ax.imshow(cv2.cvtColor(im0s, cv2.COLOR_BGR2RGB))
             ax.set_title(os.path.basename(path) + f' | p={person_extracted_img}')
             ax.axis('off')
-
-            index += 1
+            plt.show()
+            # plt.close(fig)
 
         
     # Print final results
@@ -115,12 +106,6 @@ def main():
     print("===============================")
     print(f"Average speed per image: {average_speed:.1f}ms")
     print("===============================")
-    
-    if show_plots:
-        for i in range(index * 2, len(axes)):
-            axes[i].axis('off')
-
-        plt.show()
         
     if save:
         covert_to_COCO_and_save_json(target, results)
@@ -133,7 +118,7 @@ if __name__ == '__main__':
     parser.add_argument('--target', type=int, default=0, help='ID number of the selected participant')
     parser.add_argument('--img-source', type=str, default='', help='path to image')
     parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
-    parser.add_argument('--conf-thres', type=float, default=0.25, help='object confidence threshold')
+    parser.add_argument('--conf-thres', type=float, default=0.3, help='object confidence threshold')
     parser.add_argument('--show-plots', action='store_true', help='whether the visualizations are printed along with code execution')
     parser.add_argument('--save', action='store_true', help='whether to save the results')
     opt = parser.parse_args()
