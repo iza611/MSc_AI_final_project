@@ -9,22 +9,14 @@ from modules.target_person_detection import target_person_detection
 from modules.crop_target_box import crop_target_box
 from modules.gesture_recognition import gesture_recognition
 from modules.gesture_synthesis import gesture_synthesis
-from prep.select_device import select_device
-from prep.load_model import load_targets_model, load_gestures_model
-from prep.LoadImages import LoadImages
-from prep.inference_prep import img_prep, warmup
-from prep.time_synch import time_synchronized
-from prep.plots import plot_one_box
-from prep.label_mapping import class_to_label
-from prep.save_predictions import covert_to_COCO_and_save_json
-
-def resize_with_aspect_ratio(image):
-    height = 640
-    (h, w) = image.shape[:2]
-    aspect_ratio = w / h
-    width = int(height * aspect_ratio)
-    resized_image = cv2.resize(image, (width, height))
-    return resized_image
+from utils.select_device import select_device
+from utils.load_model import load_targets_model, load_gestures_model
+from utils.LoadImages import LoadImages
+from utils.inference_prep import img_prep, warmup
+from utils.time_synch import time_synchronized
+from utils.plots import plot_one_box, resize_with_aspect_ratio
+from utils.label_mapping import class_to_label
+from utils.save_predictions import covert_to_COCO_and_save_json
 
 def main():
     target, img_source, show_plots, save = opt.target, opt.img_source, opt.show_plots, opt.save
@@ -50,7 +42,8 @@ def main():
     # Initialize plot
     if show_plots:
         num_columns = 1
-        num_rows = (dataset.nf + num_columns - 1) // num_columns
+        # num_rows = (dataset.nf + num_columns - 1) // num_columns
+        num_rows = dataset.nf
         fig, axes = plt.subplots(num_rows, num_columns, figsize=(20, 5 * num_rows))
         plt.subplots_adjust(hspace=0.5)
         axes = axes.flatten()
@@ -106,12 +99,22 @@ def main():
             ax.axis('off')
 
             index += 1
+        
+        if show_plots and isinstance(person_extracted_img, int):
+            ax = axes[index]
+            ax.imshow(cv2.cvtColor(im0s, cv2.COLOR_BGR2RGB))
+            ax.set_title(os.path.basename(path) + f' | p={person_extracted_img}')
+            ax.axis('off')
+
+            index += 1
 
         
     # Print final results
     print(results)
     average_speed = (sum(speed) / len(speed))
-    print(f"average time: {average_speed:.1f}ms")
+    print("===============================")
+    print(f"Average speed per image: {average_speed:.1f}ms")
+    print("===============================")
     
     if show_plots:
         for i in range(index * 2, len(axes)):

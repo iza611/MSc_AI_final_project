@@ -1,11 +1,7 @@
 from pathlib import Path
 import torch
 
-import sys
-from os.path import abspath, join, dirname
-base_path = abspath('./../training/model/yolov7/')
-sys.path.append(base_path)
-
+# from yolov7.utils.general import non_max_suppression, scale_coords
 from utils.general import non_max_suppression, scale_coords
 
 def target_person_detection(model, path, img, im0s, conf_thres):
