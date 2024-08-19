@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-from prep.LoadImages import letterbox
+from utils.LoadImages import letterbox
 
 def img_prep(img, device, half, cropped_img=False, stride=None):
     if cropped_img:
