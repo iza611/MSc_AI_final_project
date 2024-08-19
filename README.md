@@ -1,5 +1,7 @@
 Detecting the hand gesture of the target person among a group of people. This was a working repository for preparing the datasets, training all the ML models and putting it all together into the 'Person-Tailored Gesture Classification' program. This was then packed into an easily downloadable 'program.tar.gz' file. 
 
+Some of the code used in this project was adapted from https://github.com/WongKinYiu/yolov7. 
+
 # Repository content:
 ```
 ├── datasets
