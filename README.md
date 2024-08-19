@@ -5,8 +5,7 @@ Some of the code used in this project was adapted from https://github.com/WongKi
 # Repository content:
 ```
 ├── datasets
-│   ├── SIGGI_small           # Small subset of images from the SIGGI dataset for program presentation
-│   ├── ...                   # Directory containing all datasets (MIAP, HaGRID, SIGGI), totaling 271GB hence not uploaded to GitHub
+│   ├── ...                   # Directory containing all datasets (MIAP, HaGRID, SIGGI), 271GB in total so not uploaded to GitHub
 │
 ├── datasets_prep
 │   ├── ...                   # Code for dataset conversions, previews, tests, etc.
