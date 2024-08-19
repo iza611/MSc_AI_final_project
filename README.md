@@ -66,7 +66,7 @@ Some of the code used in this project was adapted from https://github.com/WongKi
    - Install Jupyter with pip install notebook if needed.
    - Launch it by running jupyter notebook in Terminal/Command Prompt.
 2. **Open run.ipynb**: In the Jupyter interface, navigate to and open run.ipynb.
-3. **Modify Arguments**: Edit the arguments in the notebook as needed. Refer to main.py for details.
+3. **Modify Arguments**: Edit the arguments in the notebook as needed. Refer to main.py for details. Point SOURCE argument to images to use for inference. To download few sample SIGGI images with blurred faces refer to Appendix.
 
 ## Run the Notebook
 
