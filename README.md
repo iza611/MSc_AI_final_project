@@ -5,24 +5,24 @@ Some of the code used in this project was adapted from https://github.com/WongKi
 # Repository content:
 ```
 ├── datasets
-│   ├── ...                   # Directory containing all datasets (MIAP, HaGRID, SIGGI), 271GB in total so not uploaded to GitHub
+│   ├── ...                   # all datasets (MIAP, HaGRID, SIGGI) were places here, 271GB in total, not uploaded to GitHub
 │
 ├── datasets_prep
 │   ├── ...                   # Code for dataset conversions, previews, tests, etc.
 │
 ├── training
-│   ├── MIAP_person_detection.ipynb        # Training progress of the human detector on MIAP dataset
-│   ├── SIGGI_target_detection.ipynb       # Progress of each target detector training
-│   ├── HaGRID_gesture_recognition.ipynb   # Gesture recognition training progress
-│   ├── experiments.ipynb                  # All hyperparameter experiments runs
-│   ├── ...                                # Folders and files needed for training, including the original YOLOv7 repo + folders where training progress and results were saved
+│   ├── MIAP_person_detection.ipynb        # training human detector on MIAP dataset
+│   ├── SIGGI_target_detection.ipynb       # training seven different target detectors on SIGGI
+│   ├── HaGRID_gesture_recognition.ipynb   # training gesture recognition on HaGRID
+│   ├── experiments.ipynb                  # hyperparameter experiments
+│   ├── ...                                # folders and files needed for training, including the original YOLOv7 repo + folders where training progress and results were saved
 │
 ├── evaluation
-│   ├── SIGGI_full.ipynb                   # Calculating results based on the full program runs
-│   ├── SIGGI_targets.ipynb                # Quantitative tests on all 7 target detectors
-│   ├── MIAP_humans.ipynb                  # Quantitative tests on the human detector
-│   ├── HaGRID_SIGGI_gestures.ipynb        # Quantitative and qualitative tests of gesture recognition
-│   ├── ...                                # Other evaluation results and calculations
+│   ├── SIGGI_full.ipynb                   # evaluation of the integratedsystem
+│   ├── SIGGI_targets.ipynb                # quantitative tests on all 7 target detectors
+│   ├── MIAP_humans.ipynb                  # quantitative tests on the human detector
+│   ├── HaGRID_SIGGI_gestures.ipynb        # quantitative and qualitative tests on gesture recognition
+│   ├── ...                                # other evaluation results, calculations
 │
 ├── Person-Tailored Gesture Classification
 │   ├── modules
@@ -30,13 +30,13 @@ Some of the code used in this project was adapted from https://github.com/WongKi
 │   │   ├── crop_target_box.py
 │   │   ├── gesture_recognition.py
 │   │   ├── gesture_synthesis.py   
-│   ├── main.py                            # Entry file that integrates all modules
-│   ├── run.ipynb                          # Notebook to run the main file with appropriate arguments
-│   ├── requirements.txt                   # Project dependencies listed
-│   ├── ...                                # Code and files needed to run the program and save results
+│   ├── main.py                            # entry file integrating all the modules
+│   ├── run.ipynb                          # entry notebook to run the main file
+│   ├── requirements.txt                   # project dependencies
+│   ├── ...                                # code and files needed to run the program and save results
 │
-├── program.tar.gz                         # Compressed 'Person-Tailored Gesture Classification' folder for easier download
-├── ...                                    # Other files and folders for project management, such as virtual environments, Git LFS, not uploaded to GitHub
+├── program.tar.gz                         # compressed 'Person-Tailored Gesture Classification' folder
+├── ...                                    # other files and folders for project management, such as virtual environments, Git LFS, not uploaded to GitHub
 ```
 
 # Installation and Setup Guide
